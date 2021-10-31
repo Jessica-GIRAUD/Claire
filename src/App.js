@@ -15,13 +15,13 @@ function App() {
   const location = useLocation();
 const [loading, setLoading] = useState(true);
 
-useEffect(() => {
+ useEffect(() => {
   const timer = setTimeout(() => {
     setLoading(false)
   }, 3000);
   return () => clearTimeout(timer);
 }, []);
-
+ 
   return (
     <>
       {loading && location.pathname === "/" ? 

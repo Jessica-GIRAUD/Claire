@@ -221,7 +221,7 @@ h4 {
   }
 
   .who-container {
-    padding-top: 30%;
+    padding-top: 20%;
   }
 
   .who-text-container {
@@ -229,7 +229,7 @@ h4 {
   }
 
   .why-title {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 
   .why-container {
@@ -372,6 +372,11 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  .logo-anime {
+    width: 100%;
+    margin: auto;
+  }
+
   .container-seance {
     position: relative;
     width: 75%;
@@ -386,6 +391,14 @@ h4 {
   .mandala {
     display: none;
   }
+
+  .custom-shape-divider-top-1634994765 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+  }
+
   .custom-shape-divider-bottom-1635688940 {
     display: block;
     position: relative;
@@ -408,20 +421,19 @@ h4 {
     fill: #a9c6ba;
   }
 
-  /** For tablet devices **/
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1635688940 svg {
-      width: calc(190% + 1.3px);
-      height: 136px;
-    }
-  }
-
   /** For mobile devices **/
   @media (max-width: 767px) {
     .custom-shape-divider-bottom-1635688940 svg {
       width: calc(117% + 1.3px);
       height: 51px;
     }
+  }
+
+  .custom-shape-divider-top-1634995479 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 50px;
   }
 }
 /* PRESTA PAGE */
