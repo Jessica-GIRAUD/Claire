@@ -1,0 +1,194 @@
+/* CSS for Navbar */
+
+.logo {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+}
+.navbar-list {
+  color: grey;
+  font-weight: 300;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navbarGreenStyle {
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  border-bottom: 1px solid rgb(109, 88, 80);
+  width: 100%;
+  height: 25vh;
+}
+
+.navbarCreamStyle {
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  border-bottom: 1px solid rgb(109, 88, 80);
+  width: 100%;
+  height: 25vh;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: #545454;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
+.navbar-list a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 1px;
+  width: 0;
+  background: #545454;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navbar-list a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.cream a:active {
+  color: #fff5f0;
+}
+
+.green a:active {
+  color: #545454;
+}
+
+.active a {
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 0px;
+  margin: auto;
+}
+
+.navbar li {
+  margin: 0 1% 0 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mobile-menu {
+  visibility: hidden;
+}
+
+/* MENU BURGER */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #545454;
+  height: 10% !important;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #d1c7c7;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #545454;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  right: 0px;
+  top: 0;
+  z-index: 1100;
+  width: 100% !important;
+  height: 100%;
+  transition: all 0.5s ease 0s;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fff5f0;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #0c0c0c;
+  line-height: 2.4em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: #fff5f0;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 45%;
+    margin: 0 10px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbarCreamStyle {
+    background-color: transparent;
+    display: flex;
+    border-bottom: none;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .navbarGreenStyle {
+    background-color: transparent;
+    display: flex;
+    border-bottom: none;
+    width: 100%;
+    height: 20vh;
+  }
+  .mobile-menu {
+    visibility: visible;
+  }
+}
