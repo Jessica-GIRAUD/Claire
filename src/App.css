@@ -1,26 +1,28 @@
+@font-face {
+  font-family: "MyFont";
+  src: local("MyFont"), url(./style/Fonts/Amsterdam-Two_ttf.woff) format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
 body {
-  color: #6d5850;
+  color: #48392e;
   font-family: "Quicksand", sans-serif;
 }
 
 h1 {
-  font-family: "Niconne", cursive;
+  font-family: "MyFont", cursive;
   margin-top: 0;
   font-weight: 100;
   font-style: italic;
-  color: rgb(109, 88, 80);
-  font-size: 80px;
-}
-
-.vertical-arrow {
-  transform: rotate(90deg);
+  color: #48392e;
+  font-size: 70px;
 }
 
 /* CSS for pages*/
 
-.greenPage {
+.coffeePage {
   min-height: 100vh;
-  background-color: #a9c6ba;
+  background-color: #e8ceb0;
 }
 
 .creamPage {
@@ -28,22 +30,87 @@ h1 {
   background-color: #fff5f0;
 }
 
+/* ACCUEIL PAGE */
+
+.accueil-img-text-container {
+  padding-top: 25vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.instruction-container h4 {
+  text-align: center;
+  font-size: xx-large !important;
+}
+
+.instruction-container p {
+  text-align: center;
+  font-size: x-large !important;
+}
+
+.ecriture {
+  width: 30%;
+}
+.instruction-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.citation-container {
+  width: 90%;
+  display: flex;
+  margin: 3% auto 0 auto;
+  justify-content: space-around;
+}
+
+.citation {
+  font-size: 26px !important;
+  text-align: center;
+}
+
+.auteur {
+  font-size: 33px !important;
+  text-align: end;
+}
+
+.guillemet1 {
+  width: 5%;
+  height: 5%;
+  transform: rotateY(3.142rad);
+}
+
+.guillemet2 {
+  width: 5%;
+  height: 5%;
+}
+
 /* ABOUT PAGE */
 
 .container-about {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 30vh;
+  justify-content: space-around;
+  padding-top: 25vh;
+  margin: auto;
+}
+
+.about-txt-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
 }
 
 p {
   text-align: justify;
-  font-size: large;
+  font-size: 200;
 }
 
 h4 {
+  font-family: "Josefin Sans", sans-serif;
   font-size: large;
 }
 
@@ -57,11 +124,13 @@ h4 {
 
 .claire-container {
   width: 35%;
+  display: flex;
+  justify-content: center;
 }
 
 .claire {
-  width: 100%;
-  filter: drop-shadow(15px 15px 15px #6d585063);
+  width: 80%;
+  filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
 @media (max-width: 768px) {
@@ -87,12 +156,9 @@ h4 {
     margin-top: 20px;
   }
 
-  .vertical-arrow {
-    display: none;
-  }
   .claire {
     width: 90%;
-    filter: drop-shadow(15px 15px 15px #6d585063);
+    filter: drop-shadow(15px 15px 15px #48392e63);
   }
 
   .claire-container {
@@ -129,7 +195,6 @@ h4 {
 
 .presentation img {
   width: 90%;
-  filter: drop-shadow(15px 15px 15px #6d585063);
 }
 .container-sophro-who {
   position: relative;
@@ -170,10 +235,17 @@ h4 {
   width: 30%;
 }
 
+.presentation-txt-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
 .who-txt-pic-container img {
   margin-top: 3%;
   width: 200px;
-  filter: drop-shadow(15px 15px 15px #6d585063);
+  filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
 .adults {
@@ -184,19 +256,19 @@ h4 {
 .why-container {
   display: flex;
   width: 93%;
-  justify-content: center;
+  justify-content: space-between;
 }
 .why-txt-pic-container {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .why-txt-pic-container img {
-  width: 80%;
+  width: 70%;
   padding-bottom: 30px;
-  filter: drop-shadow(15px 15px 15px #6d585063);
+  filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
 .why-title {
@@ -266,7 +338,7 @@ h4 {
 }
 
 .custom-shape-divider-top-1634994765 .shape-fill {
-  fill: #a9c6ba;
+  fill: #e8ceb0;
 }
 
 .custom-shape-divider-top-1634995479 {
@@ -302,36 +374,150 @@ h4 {
   padding-top: 10%;
 }
 
-.my-animation {
-  display: flex;
-  min-height: 100vh;
-  background-color: #a9c6ba;
-  animation: fade 8s steps(90) forwards;
-  -webkit-animation: fade 3s steps(90) forwards;
-  -moz-animation: fade 3s steps(90) forwards;
-}
-
 .logo-anime {
   height: 100%;
   margin: auto;
 }
 
-@keyframes fade {
-  from {
+.my-animation {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff5f0;
+  animation: fadeOut ease 4s;
+  -webkit-animation: fadeOut ease 4s;
+  -moz-animation: fadeOut ease 4s;
+  -o-animation: fadeOut ease 4s;
+  -ms-animation: fadeOut ease 4s;
+}
+@keyframes fadeOut {
+  0% {
     opacity: 1;
   }
-  to {
+  70% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
 
-/* Seance CSS start */
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
-.container-seance {
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ENTREPRISE PAGE */
+
+.reunion {
+  width: 40%;
+}
+
+.entreprise-title {
+  padding-top: 25vh;
+  display: flex;
+  justify-content: center;
+}
+
+.entreprise-title h1 {
+  margin-bottom: -6% !important;
+}
+
+.entreprise-img-text-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.entreprise-txt-container {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-left: 10%;
+}
+
+/* Seance CSS start */
+
+.number {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.number h1 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 0px !important;
+  text-shadow: 3px 3px 7px #48392e;
+}
+.number p {
+  text-align: center;
+}
+
+.numbers-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8%;
+}
+
+.numbers-container-txt {
+  text-align: center;
+}
+
+.fauteuil {
+  width: 35%;
+  margin: 2% 0;
+}
+.container-seance {
+  text-align: center;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  align-items: center;
 }
 
 .container-seance li {
@@ -348,7 +534,7 @@ h4 {
   width: 70%;
   margin: auto;
   display: flex;
-  filter: drop-shadow(15px 15px 15px #6d585063);
+  filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
 .seance-title h1 {
@@ -388,10 +574,6 @@ h4 {
     font-size: medium;
   }
 
-  .mandala {
-    display: none;
-  }
-
   .custom-shape-divider-top-1634994765 svg {
     position: relative;
     display: block;
@@ -418,7 +600,7 @@ h4 {
   }
 
   .custom-shape-divider-bottom-1635688940 .shape-fill {
-    fill: #a9c6ba;
+    fill: #e8ceb0;
   }
 
   /** For mobile devices **/
@@ -450,13 +632,6 @@ h4 {
   width: 35%;
   display: flex;
   justify-content: center;
-}
-
-.mandala {
-  width: 30%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 /* CONTACT PAGE */
@@ -506,7 +681,7 @@ h4 {
 
 .container-contact2 a {
   text-decoration: none;
-  color: #a9c6ba;
+  color: #e8ceb0;
 }
 
 .iframe {
@@ -582,6 +757,6 @@ h4 {
   }
 
   .custom-shape-divider-bottom-1635688825 .shape-fill {
-    fill: #a9c6ba;
+    fill: #e8ceb0;
   }
 }
