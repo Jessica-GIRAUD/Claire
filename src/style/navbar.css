@@ -2,7 +2,7 @@
 
 .logo {
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -19,26 +19,36 @@
 }
 
 .navbarGreenStyle {
-  position: absolute;
-  background-color: transparent;
+  position: fixed;
+  background-color: #a9c6ba;
   display: flex;
-  border-bottom: 1px solid rgb(109, 88, 80);
   width: 100%;
-  height: 25vh;
+  height: auto;
+  z-index: 2;
+}
+
+.navbarCoffeeStyle {
+  position: fixed;
+  background-color: #e8ceb0;
+  display: flex;
+  width: 100%;
+  height: auto;
+  z-index: 2;
 }
 
 .navbarCreamStyle {
-  position: absolute;
-  background-color: transparent;
+  z-index: 2;
+  position: fixed;
+  background-color: #fff5f0;
   display: flex;
-  border-bottom: 1px solid rgb(109, 88, 80);
   width: 100%;
-  height: 25vh;
+  height: auto;
 }
 
 .navbar-list a {
+  font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
-  color: #545454;
+  color: #48392e;
   font-size: large;
   padding-bottom: 5px;
 }
@@ -52,7 +62,7 @@
   background: none repeat scroll 0 0 transparent;
   height: 1px;
   width: 0;
-  background: #545454;
+  background: #48392e;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
@@ -66,7 +76,7 @@
 }
 
 .green a:active {
-  color: #545454;
+  color: #48392e;
 }
 
 .active a {
@@ -106,7 +116,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #545454;
+  background: #48392e;
   height: 10% !important;
 }
 
@@ -123,7 +133,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #545454;
+  background: #48392e;
 }
 
 /*

@@ -25,6 +25,11 @@ h1 {
   background-color: #e8ceb0;
 }
 
+.greenPage {
+  min-height: 100vh;
+  background-color: #a9c6ba;
+}
+
 .creamPage {
   min-height: 100vh;
   background-color: #fff5f0;
@@ -115,7 +120,7 @@ h4 {
 }
 
 .container-sophro {
-  padding-top: 30vh;
+  padding-top: 25vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -486,7 +491,7 @@ h4 {
 }
 
 .number h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "MyFont", sans-serif;
   margin-bottom: 0px !important;
   text-shadow: 3px 3px 7px #48392e;
 }
@@ -498,7 +503,7 @@ h4 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 8%;
 }
 
@@ -525,13 +530,13 @@ h4 {
 }
 
 .seance-title {
-  padding-top: 30vh;
+  padding-top: 25vh;
   display: flex;
   justify-content: center;
 }
 
 .meditation-img {
-  width: 70%;
+  width: 80%;
   margin: auto;
   display: flex;
   filter: drop-shadow(15px 15px 15px #48392e63);
@@ -621,17 +626,80 @@ h4 {
 /* PRESTA PAGE */
 
 .container-presta {
-  padding-top: 30vh;
+  padding-top: 25vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.presta-img-container {
-  width: 35%;
+.wrapper {
   display: flex;
-  justify-content: center;
+  height: 350px;
+  width: 90%;
+  align-items: flex-start;
+}
+
+.presta-adultes {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presta-type {
+  position: absolute;
+  top: 45%;
+}
+
+.prices-container {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff5f0;
+  justify-content: space-evenly;
+}
+
+.alone {
+  width: 30%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff5f0;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.paiement {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.prices-container h4 {
+  margin: 0;
+  text-align: center;
+}
+.prices-container p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.presta-img-container {
+  display: flex;
+  height: 100%;
+}
+
+.tiare-img {
+  width: 100%;
+  filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
 /* CONTACT PAGE */
@@ -639,10 +707,9 @@ h4 {
 .container-contact {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 .contact-container {
@@ -656,19 +723,11 @@ h4 {
   margin-bottom: 1% !important;
 }
 
-.container-contact2 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .container-adresse {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   align-items: center;
-  margin-right: 15%;
 }
 
 .container-adresse h4 {
@@ -679,7 +738,7 @@ h4 {
   text-align: center;
 }
 
-.container-contact2 a {
+.container-contact a {
   text-decoration: none;
   color: #e8ceb0;
 }
@@ -715,10 +774,6 @@ h4 {
   .meditation-img {
     width: 255px;
     margin-bottom: 45px;
-  }
-
-  .container-contact2 {
-    flex-direction: column;
   }
 
   .container-adresse {
