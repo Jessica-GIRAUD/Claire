@@ -7,7 +7,7 @@ import Why from "./Why";
 
 const Sophrologie = () => {
   return (
-    <div className="greenPage">
+    <div className="coffeePage">
       <Presentation />
       <Who />
       <Why />

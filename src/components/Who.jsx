@@ -36,18 +36,23 @@ const Who = () => {
         <h1> Pour qui ?</h1>
         <div className="who-text-container">
           <p>
-            La sophrologie est une thérapie accessible dès 6 ans et sans limite
-            d'âge.
+            La sophrologie est une thérapie{" "}
+            <strong>accessible dès 5 ans et sans limite d'âge</strong>.
             <br />
-            C'est une thérapie simple qui s'adapte à tous les besoins
-            spécifiques de la personne, de l'enfant au senior.
+            C'est une thérapie{" "}
+            <strong> simple qui s'adapte à tous les besoins</strong> spécifiques
+            de la personne et qui vous permettra de{" "}
+            <strong>retrouver l'équilibre</strong> dans votre quotidien et
+            d'avancer plus sereinement.
             <br />
             Chaque objectif est défini en séance et le protocole de soin est
-            personnalisé en fonction de vos besoins.
+            <strong>
+              établi de façon personnalisée et en fonction de vos besoins
+            </strong>
+            .
           </p>
         </div>
       </div>
-
       <div className="who-pic-container ">
         <Fade left>
           <div className="who-txt-pic-container">

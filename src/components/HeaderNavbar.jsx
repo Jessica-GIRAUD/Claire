@@ -1,6 +1,5 @@
 import React from "react";
-import logoLight from "../images/logoLight.png";
-import logoDark from "../images/logoDark.png";
+import logo from "../images/Logo.png";
 import "../style/navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import { push as Menu } from "react-burger-menu";
@@ -12,31 +11,38 @@ const HeaderNavbar = () => {
   const splitLocation = pathname.split("/");
 
   return (
-    <header className={path ? "navbarGreenStyle" : "navbarCreamStyle"}>
-      <Link to="/">
-        <img
-          src={path ? logoDark : logoLight}
-          alt="Claire Deligné"
-          id="logo"
-          className="logo"
-        />
+    <header className="navbarCreamStyle">
+      <Link to="/" style={{ width: "30%" }}>
+        <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
       </Link>
       <nav className="navbar">
         <ul className={path ? "navbar-list cream" : "navbar-list green"}>
-          <li className={splitLocation[1] === "about" ? "active" : ""}>
-            <a href="/about">Qui suis-je ?</a>
+          <li
+            className={
+              splitLocation[1] === "" || splitLocation[1] === "accueil"
+                ? "active"
+                : ""
+            }
+          >
+            <a href="/accueil">Accueil</a>
+          </li>
+          <li className={splitLocation[1] === "aproposdemoi" ? "active" : ""}>
+            <a href="/aproposdemoi">A propos de moi</a>
           </li>
           <li className={splitLocation[1] === "sophrologie" ? "active" : ""}>
-            <a href="/sophrologie">Pourquoi la Sophrologie ?</a>
-          </li>
+            <a href="/sophrologie">La Sophrologie</a>
+          </li>{" "}
           <li className={splitLocation[1] === "seance" ? "active" : ""}>
             <a href="/seance">La Séance</a>
           </li>
+          <li className={splitLocation[1] === "entreprise" ? "active" : ""}>
+            <a href="/entreprise">Entreprise</a>
+          </li>
           <li className={splitLocation[1] === "prestations" ? "active" : ""}>
-            <a href="/prestations">Mes Prestations</a>
+            <a href="/prestations">Prestations</a>
           </li>
           <li className={splitLocation[1] === "contact" ? "active" : ""}>
-            <a href="/contact">Me Contacter</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -44,20 +50,32 @@ const HeaderNavbar = () => {
       <nav className="mobile-menu">
         <Menu right>
           <ul className={path ? "navbar-list cream" : "navbar-list green"}>
-            <li className={splitLocation[1] === "about" ? "active" : ""}>
-              <a href="/about">Qui suis-je ?</a>
+            <li
+              className={
+                splitLocation[1] === "" || splitLocation[1] === "accueil"
+                  ? "active"
+                  : ""
+              }
+            >
+              <a href="/accueil">Accueil</a>
+            </li>
+            <li className={splitLocation[1] === "aproposdemoi" ? "active" : ""}>
+              <a href="/aproposdemoi">A propos de moi</a>
             </li>
             <li className={splitLocation[1] === "sophrologie" ? "active" : ""}>
-              <a href="/sophrologie">Pourquoi la Sophrologie ?</a>
+              <a href="/sophrologie">La Sophrologie</a>
+            </li>{" "}
+            <li className={splitLocation[1] === "entreprise" ? "active" : ""}>
+              <a href="/entreprise">Entreprise</a>
             </li>
             <li className={splitLocation[1] === "seance" ? "active" : ""}>
               <a href="/seance">La Séance</a>
             </li>
             <li className={splitLocation[1] === "prestations" ? "active" : ""}>
-              <a href="/prestations">Mes Prestations</a>
+              <a href="/prestations">Prestations</a>
             </li>
             <li className={splitLocation[1] === "contact" ? "active" : ""}>
-              <a href="/contact">Me Contacter</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </Menu>

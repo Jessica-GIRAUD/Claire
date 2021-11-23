@@ -10,6 +10,8 @@ import LogoAnime from "./images/LogoAnime.gif";
 import { useEffect, useState } from 'react';
 import {  useLocation } from "react-router-dom";
 import './App.css';
+import Accueil from './components/Accueil';
+import Entreprise from './components/Entreprise';
 
 function App() {
   const location = useLocation();
@@ -18,7 +20,7 @@ const [loading, setLoading] = useState(true);
  useEffect(() => {
   const timer = setTimeout(() => {
     setLoading(false)
-  }, 3000);
+  }, 4000);
   return () => clearTimeout(timer);
 }, []);
  
@@ -32,9 +34,11 @@ const [loading, setLoading] = useState(true);
     <Router>  
      <HeaderNavbar />
       <Switch>
-      <Route exact path="/" component={About}></Route>
-     <Route exact path="/about" component={About}></Route>
+      <Route exact path="/" component={Accueil}></Route>
+      <Route exact path="/accueil" component={Accueil}></Route>
+     <Route exact path="/aproposdemoi" component={About}></Route>
         <Route exact path="/sophrologie" component={Sophrologie}></Route>
+        <Route exact path="/entreprise" component={Entreprise}></Route> 
         <Route exact path="/seance" component={Seance}></Route>
         <Route exact path="/prestations" component={Prestations}></Route>
         <Route exact path="/contact" component={Contact}></Route>

@@ -1,5 +1,4 @@
 import React from "react";
-import arrow from "../images/arrow.svg";
 import sand from "../images/sand.png";
 import flop from "../images/flop.png";
 import sky from "../images/sky.png";
@@ -39,9 +38,9 @@ const Why = () => {
           </Flip>
           <h4>Pour mon bien-être physique et mental</h4>
           <p>
-            J'apprends à gérer mes émotions et mon stress. Je vais vers le
-            lâcher-prise et la prise de recul pour m'aider à aller de l'avant
-            plus sereinement.
+            J'apprends à gérer mes émotions et mon stress. Je vais vers le{" "}
+            <strong>lâcher-prise</strong> et la <strong>prise de recul </strong>
+            pour m'aider à aller de l'avant plus sereinement.
           </p>
           <p style={{ fontStyle: "italic", fontSize: "medium" }}>
             (Dépression, anxiété/angoisses, périnatalié /postpartum, mal-être,
@@ -49,33 +48,22 @@ const Why = () => {
           </p>
         </div>
 
-        <img
-          src={arrow}
-          alt="arrow"
-          className="vertical-arrow"
-          style={{ width: "250px" }}
-        />
-
         <div className="why-txt-pic-container">
           <Flip delay={400}>
             <img src={flop} alt="goutte zen" />
           </Flip>
           <h4>Pour réguler mon sommeil</h4>
           <p>
-            J'apprends à retrouver mon énergie, pour me redynamiser. J'améliore
-            la qualité de mon sommeil et je retrouve un sommeil serein.
+            J'apprends à <strong>retrouver mon énergie</strong>, pour me
+            redynamiser. J'améliore la <strong>qualité de mon sommeil</strong>{" "}
+            et je retrouve un sommeil serein.
           </p>
           <p style={{ fontStyle: "italic", fontSize: "medium" }}>
             (Difficulté d'endormissement, de sommeil non réparateur, de levers
             difficiles...)
           </p>
         </div>
-        <img
-          src={arrow}
-          alt="arrow"
-          className="vertical-arrow"
-          style={{ width: "250px" }}
-        />
+
         <div className="why-txt-pic-container">
           <Flip delay={600}>
             <img src={sky} alt="sky relaxation" />
@@ -83,7 +71,8 @@ const Why = () => {
           <h4>Pour me préparer mentalement</h4>
           <p>
             Lors d'un examen ou tout autre évènement important de la vie, je
-            retrouve confiance en moi et en mes capacités.
+            retrouve <strong>confiance en moi</strong> et en mes{" "}
+            <strong>capacités</strong>.
           </p>
           <p style={{ fontStyle: "italic", fontSize: "medium" }}>
             (Préparation à l'accouchement, aux examens, aux entretiens, aux
