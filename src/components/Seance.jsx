@@ -1,11 +1,14 @@
 import React from "react";
+import Slide from "react-reveal";
 import fauteuil from "../images/fauteuil.png";
 
 const Seance = () => {
   return (
     <div className="creamPage">
       <div className="seance-title">
-        <h1>La séance</h1>
+        <Slide top>
+          <h1>La séance</h1>
+        </Slide>
       </div>
 
       <div className="container-seance">
@@ -15,7 +18,9 @@ const Seance = () => {
           et besoins).
         </p>
         <div className="numbers-container">
-          <img src={fauteuil} alt="fauteuil" className="fauteuil" />
+          <Slide left>
+            <img src={fauteuil} alt="fauteuil" className="fauteuil" />
+          </Slide>
           <div>
             <div className="numbers-container">
               <div className="number">

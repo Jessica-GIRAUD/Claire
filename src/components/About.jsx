@@ -13,7 +13,7 @@ const About = () => {
         </Fade>
 
         <div className="about-txt-pic-container">
-          <Fade right delay={600}>
+          <Fade top delay={600}>
             <h1>A propos de moi</h1>
           </Fade>
           <Fade bottom delay={900}>

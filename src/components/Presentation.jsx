@@ -1,4 +1,5 @@
 import React from "react";
+import { Slide } from "react-reveal";
 import Fade from "react-reveal/Fade";
 import boule from "../images/bouboule.png";
 
@@ -6,7 +7,9 @@ const Presentation = () => {
   return (
     <div className="container-sophro">
       <div className="presentation-txt-pic-container">
-        <h1>Présentation</h1>
+        <Slide top>
+          <h1>Présentation</h1>
+        </Slide>
         <p>
           La Sophrologie est une thérapie psychocorporelle engageant le corps et
           l'esprit vers <strong>un objectif de mieux-être</strong>.

@@ -7,20 +7,21 @@ const Contact = () => {
   return (
     <div className="creamPage">
       <div className="container-contact">
-        <Slide left>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.6032462632431!2d1.31925703769869!3d43.60224199637706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb1b035c07729%3A0x37f63e8c76c8a85d!2s12%20Av.%20du%20Louron%2C%2031770%20Colomiers!5e0!3m2!1sfr!2sfr!4v1635007898055!5m2!1sfr!2sfr"
-            style={{
-              allowfullscreen: "",
-              loading: "lazy",
-            }}
-            className="iframe"
-            title="marot"
-          />
-        </Slide>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.6032462632431!2d1.31925703769869!3d43.60224199637706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb1b035c07729%3A0x37f63e8c76c8a85d!2s12%20Av.%20du%20Louron%2C%2031770%20Colomiers!5e0!3m2!1sfr!2sfr!4v1635007898055!5m2!1sfr!2sfr"
+          style={{
+            allowfullscreen: "",
+            loading: "lazy",
+          }}
+          className="iframe"
+          title="marot"
+        />
 
         <div className="container-adresse">
-          <h1>Contact</h1>
+          <Slide top>
+            {" "}
+            <h1>Contact</h1>{" "}
+          </Slide>
           <h4>Horaires d'ouverture</h4>
           <p>
             Du Lundi au Vendredi de 9h à 18h <br />

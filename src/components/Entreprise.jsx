@@ -1,11 +1,14 @@
 import React from "react";
+import Slide from "react-reveal";
 import reunion from "../images/reunion.png";
 
 const Entreprise = () => {
   return (
     <div className="coffeePage">
       <div className="entreprise-title">
-        <h1>Entreprise</h1>
+        <Slide top>
+          <h1>Entreprise</h1>
+        </Slide>
       </div>
       <div className="entreprise-img-text-container">
         <div className="entreprise-txt-container">
@@ -54,7 +57,10 @@ const Entreprise = () => {
             </p>
           </p>
         </div>
-        <img src={reunion} alt="reunion" className="reunion" />
+        <Slide right>
+          {" "}
+          <img src={reunion} alt="reunion" className="reunion" />
+        </Slide>
       </div>
     </div>
   );
