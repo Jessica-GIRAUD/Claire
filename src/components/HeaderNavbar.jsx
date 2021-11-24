@@ -35,7 +35,7 @@ const HeaderNavbar = () => {
             <a href="/seance">La Séance</a>
           </li>
           <li className={splitLocation[1] === "entreprise" ? "active" : ""}>
-            <a href="/entreprise">Entreprise</a>
+            <a href="/entreprise">Entreprises</a>
           </li>
           <li className={splitLocation[1] === "prestations" ? "active" : ""}>
             <a href="/prestations">Prestations</a>
@@ -65,7 +65,7 @@ const HeaderNavbar = () => {
               <a href="/sophrologie">La Sophrologie</a>
             </li>
             <li className={splitLocation[1] === "entreprise" ? "active" : ""}>
-              <a href="/entreprise">Entreprise</a>
+              <a href="/entreprise">Entreprises</a>
             </li>
             <li className={splitLocation[1] === "seance" ? "active" : ""}>
               <a href="/seance">La Séance</a>

@@ -10,20 +10,24 @@ const Prestations = () => {
           <h1>Prestations</h1>
         </Slide>
         <div className="wrapper-type">
-          <h3 className="presta-type">Adultes</h3>
-          <h3> </h3>
-          <h3 className="presta-type-enfants">
-            Enfants{" "}
-            <span
-              style={{
-                fontSize: "70%",
-                fontStyle: "italic",
-                color: "dimgray",
-              }}
-            >
-              jusqu'à 11 ans
-            </span>
-          </h3>
+          <div className="presta-adultes">
+            <h3 className="presta-type">Adultes</h3>
+          </div>
+          <div className="presta-img-container"></div>
+          <div className="presta-adultes2">
+            <h3 className="presta-type-enfants">
+              Enfants{" "}
+              <span
+                style={{
+                  fontSize: "70%",
+                  fontStyle: "italic",
+                  color: "dimgray",
+                }}
+              >
+                jusqu'à 11 ans
+              </span>
+            </h3>
+          </div>
         </div>
         <div className="wrapper">
           <Slide left>
@@ -85,7 +89,7 @@ const Prestations = () => {
 
         <Slide bottom>
           <div className="wrapper-type-entreprise">
-            <h3 className="presta-type">Entreprise</h3>{" "}
+            <h3 className="presta-type">Entreprises</h3>{" "}
           </div>
           <div className="prices-container alone">
             <h4> Séance en groupe </h4>

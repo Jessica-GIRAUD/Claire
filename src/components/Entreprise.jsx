@@ -7,7 +7,7 @@ const Entreprise = () => {
     <div className="coffeePage">
       <div className="entreprise-title">
         <Slide top>
-          <h1>Entreprise</h1>
+          <h1>Entreprises</h1>
         </Slide>
       </div>
       <div className="entreprise-img-text-container">

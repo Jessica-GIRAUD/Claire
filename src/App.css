@@ -40,12 +40,13 @@ h1 {
 .accueil-img-text-container {
   padding-top: 25vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .instruction-container h4 {
   text-align: center;
   font-size: xx-large !important;
+  margin-top: 40px;
 }
 
 .instruction-container p {
@@ -54,7 +55,7 @@ h1 {
 }
 
 .ecriture {
-  width: 30%;
+  width: 20%;
   filter: drop-shadow(15px 15px 15px #48392e63);
 }
 .instruction-container {
@@ -79,6 +80,7 @@ h1 {
 .auteur {
   font-size: 33px !important;
   text-align: end;
+  margin-bottom: 0;
 }
 
 .guillemet1 {
@@ -158,7 +160,7 @@ h1 {
   }
 
   .citation {
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
 
   .auteur {
@@ -272,10 +274,12 @@ h4 {
 
 .presentation {
   width: 35%;
+  display: flex;
+  justify-content: center;
 }
 
 .presentation img {
-  width: 90%;
+  width: 70%;
 }
 .container-sophro-who {
   position: relative;
@@ -549,7 +553,7 @@ h4 {
 /* ENTREPRISE PAGE */
 
 .reunion {
-  width: 40%;
+  width: 32%;
 }
 
 .entreprise-title {
@@ -564,7 +568,7 @@ h4 {
 
 .entreprise-img-text-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -605,12 +609,17 @@ h4 {
 }
 
 .number h1 {
+  display: flex;
   font-family: "MyFont", sans-serif;
   margin-bottom: 0px !important;
   text-shadow: 3px 3px 7px #48392e;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
 }
 .number p {
   text-align: center;
+  margin: 0;
 }
 
 .numbers-container {
@@ -618,7 +627,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
 }
 
 .numbers-container-txt {
@@ -644,7 +653,7 @@ h4 {
 }
 
 .seance-title {
-  padding-top: 25vh;
+  padding-top: 21vh;
   display: flex;
   justify-content: center;
 }
@@ -763,6 +772,10 @@ h4 {
   justify-content: center;
 }
 
+.container-presta h1 {
+  margin-bottom: 0 !important;
+}
+
 .wrapper {
   display: flex;
   width: 90%;
@@ -773,7 +786,7 @@ h4 {
 .wrapper-type {
   display: flex;
   width: 90%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .wrapper-type-entreprise {
@@ -841,10 +854,11 @@ h4 {
 .presta-img-container {
   display: flex;
   height: 100%;
+  width: 50%;
 }
 
 .tiare-img {
-  width: 90%;
+  width: 75%;
   filter: drop-shadow(15px 15px 15px #48392e63);
   margin: 0 auto;
 }
@@ -864,6 +878,11 @@ h4 {
     margin: auto;
   }
 
+  .presta-adultes2 {
+    width: 100%;
+    margin: auto;
+  }
+
   .tiare-img {
     margin: 0;
     width: 100%;
@@ -871,6 +890,14 @@ h4 {
 
   .wrapper-type {
     justify-content: center;
+  }
+
+  .wrapper-type .presta-img-container {
+    display: none;
+  }
+
+  .wrapper-type .presta-adultes2 {
+    display: none;
   }
 
   .wrapper-type-entreprise {
@@ -914,6 +941,10 @@ h4 {
   .deontologie {
     font-size: medium;
     text-align: center;
+  }
+
+  .presta-img-container {
+    width: 100%;
   }
 }
 
@@ -976,6 +1007,9 @@ h4 {
   }
   .container-contact h1 {
     margin-bottom: 33px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .container-presta {
     flex-direction: column;
