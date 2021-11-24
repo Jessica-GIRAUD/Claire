@@ -38,7 +38,7 @@ h1 {
 /* ACCUEIL PAGE */
 
 .accueil-img-text-container {
-  padding-top: 20vh;
+  padding-top: 25vh;
   display: flex;
   justify-content: space-around;
 }
@@ -172,7 +172,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 20vh;
+  padding-top: 25vh;
   margin: auto;
 }
 
@@ -194,7 +194,7 @@ h4 {
 }
 
 .container-sophro {
-  padding-top: 20vh;
+  padding-top: 25vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -553,7 +553,7 @@ h4 {
 }
 
 .entreprise-title {
-  padding-top: 20vh;
+  padding-top: 25vh;
   display: flex;
   justify-content: center;
 }
@@ -577,6 +577,10 @@ h4 {
 @media (max-width: 768px) {
   .entreprise-img-text-container {
     flex-direction: column;
+  }
+
+  .entreprise-title {
+    padding-top: 20vh;
   }
   .entreprise-txt-container {
     width: 85%;
@@ -640,7 +644,7 @@ h4 {
 }
 
 .seance-title {
-  padding-top: 20vh;
+  padding-top: 25vh;
   display: flex;
   justify-content: center;
 }
@@ -676,6 +680,10 @@ h4 {
   .logo-anime {
     width: 100%;
     margin: auto;
+  }
+
+  .seance-title {
+    padding-top: 20vh;
   }
 
   .container-seance {
@@ -747,7 +755,7 @@ h4 {
 /* PRESTA PAGE */
 
 .container-presta {
-  padding-top: 20vh;
+  padding-top: 25vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -916,7 +924,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20vh;
+  padding-top: 25vh;
 }
 
 .contact-container {
@@ -964,12 +972,14 @@ h4 {
 @media (max-width: 768px) {
   .container-contact {
     flex-direction: column;
+    padding-top: 20vh;
   }
   .container-contact h1 {
     margin-bottom: 33px !important;
   }
   .container-presta {
     flex-direction: column;
+    padding-top: 20vh;
   }
 
   .seance-txt-pic-container {
