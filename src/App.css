@@ -743,9 +743,23 @@ h4 {
 
 .wrapper {
   display: flex;
-  height: 350px;
   width: 90%;
   align-items: flex-start;
+  height: 350px;
+}
+
+.wrapper-type {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.wrapper-type-mobile {
+  display: none;
+}
+
+.presta-type-enfants-mobile {
+  display: none;
 }
 
 .presta-adultes {
@@ -755,16 +769,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-.presta-type {
-  position: absolute;
-  top: 45%;
-}
-
-.presta-type-enfants {
-  position: absolute;
-  top: 45%;
 }
 
 .prices-container {
@@ -829,17 +833,25 @@ h4 {
     margin: auto;
   }
 
-  .presta-type {
-    top: 39%;
+  .wrapper-type {
+    justify-content: center;
   }
-
+  .wrapper-type-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .presta-type-enfants-mobile {
+    display: initial;
+  }
   .presta-type-enfants {
-    top: 114%;
+    display: none;
   }
 
   .presta-img-container {
     height: 70%;
-    margin: 50px 0 70px 0;
+    margin: 30px 0 15px 0;
   }
 
   .alone {
