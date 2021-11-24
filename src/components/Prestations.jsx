@@ -13,7 +13,9 @@ const Prestations = () => {
           <div className="presta-adultes">
             <h3 className="presta-type">Adultes</h3>
           </div>
+
           <div className="presta-img-container"></div>
+
           <div className="presta-adultes2">
             <h3 className="presta-type-enfants">
               Enfants{" "}
