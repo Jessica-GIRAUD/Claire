@@ -78,13 +78,13 @@ const Who = () => {
             </p>
           </div>
         </Fade>
-        <Fade bottom left delay={1000}>
+        <Fade bottom left delay={800}>
           <div className="who-txt-pic-container">
             <img src={adults} alt="adults adultes" className="adults" />
             <p>Adultes</p>
           </div>
         </Fade>
-        <Fade bottom right delay={1000}>
+        <Fade bottom right delay={800}>
           <div className="who-txt-pic-container">
             <img src={seniors} alt="seniors personnes agées" />
             <p>Séniors</p>

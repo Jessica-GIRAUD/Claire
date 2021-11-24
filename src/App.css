@@ -38,7 +38,7 @@ h1 {
 /* ACCUEIL PAGE */
 
 .accueil-img-text-container {
-  padding-top: 25vh;
+  padding-top: 20vh;
   display: flex;
   justify-content: space-around;
 }
@@ -55,6 +55,7 @@ h1 {
 
 .ecriture {
   width: 30%;
+  filter: drop-shadow(15px 15px 15px #48392e63);
 }
 .instruction-container {
   width: 60%;
@@ -171,7 +172,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 25vh;
+  padding-top: 20vh;
   margin: auto;
 }
 
@@ -184,7 +185,7 @@ h1 {
 
 p {
   text-align: justify;
-  font-size: 200;
+  font-size: medium;
 }
 
 h4 {
@@ -193,7 +194,7 @@ h4 {
 }
 
 .container-sophro {
-  padding-top: 25vh;
+  padding-top: 20vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -221,7 +222,7 @@ h4 {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    padding-top: 25vh;
+    padding-top: 20vh;
   }
 
   .about-txt-pic-container {
@@ -259,7 +260,7 @@ h4 {
   }
 
   .container-sophro {
-    padding-top: 25vh;
+    padding-top: 20vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -295,9 +296,14 @@ h4 {
 }
 
 .who-text-container {
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+.who-text-container p {
+  text-align: center;
 }
 
 .who-pic-container {
@@ -351,6 +357,14 @@ h4 {
   filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
+.why-txt-pic-container p {
+  text-align: center;
+}
+
+.who-text-container p {
+  text-align: justify;
+}
+
 .why-title {
   display: flex;
   justify-content: center;
@@ -358,7 +372,7 @@ h4 {
 
 @media (max-width: 768px) {
   .container-sophro {
-    padding-top: 25vh;
+    padding-top: 20vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -539,7 +553,7 @@ h4 {
 }
 
 .entreprise-title {
-  padding-top: 25vh;
+  padding-top: 20vh;
   display: flex;
   justify-content: center;
 }
@@ -626,7 +640,7 @@ h4 {
 }
 
 .seance-title {
-  padding-top: 25vh;
+  padding-top: 20vh;
   display: flex;
   justify-content: center;
 }
@@ -733,7 +747,7 @@ h4 {
 /* PRESTA PAGE */
 
 .container-presta {
-  padding-top: 25vh;
+  padding-top: 20vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -752,6 +766,12 @@ h4 {
   display: flex;
   width: 90%;
   justify-content: space-between;
+}
+
+.wrapper-type-entreprise {
+  display: flex;
+  width: 90%;
+  justify-content: center;
 }
 
 .wrapper-type-mobile {
@@ -780,6 +800,7 @@ h4 {
   border-radius: 20px;
   background-color: #fff5f0;
   justify-content: space-evenly;
+  filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
 .alone {
@@ -791,20 +812,21 @@ h4 {
   border-radius: 20px;
   background-color: #fff5f0;
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .paiement {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 70%;
 }
 .prices-container h4 {
   margin: 0;
   text-align: center;
+  font-size: medium;
 }
 .prices-container p {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -814,8 +836,9 @@ h4 {
 }
 
 .tiare-img {
-  width: 100%;
+  width: 90%;
   filter: drop-shadow(15px 15px 15px #48392e63);
+  margin: 0 auto;
 }
 
 .deontologie {
@@ -833,8 +856,17 @@ h4 {
     margin: auto;
   }
 
+  .tiare-img {
+    margin: 0;
+    width: 100%;
+  }
+
   .wrapper-type {
     justify-content: center;
+  }
+
+  .wrapper-type-entreprise {
+    margin-top: 30px;
   }
   .wrapper-type-mobile {
     display: flex;
@@ -884,7 +916,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 25vh;
+  padding-top: 20vh;
 }
 
 .contact-container {
@@ -945,17 +977,13 @@ h4 {
     margin-bottom: 20px;
   }
 
-  .seance-title {
-    margin-bottom: 33px;
-  }
-
   .meditation-img {
     width: 255px;
     margin-bottom: 45px;
   }
 
   .container-adresse {
-    width: 75%;
+    width: 85%;
     margin: 0 0 40px 0;
   }
 

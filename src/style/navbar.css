@@ -154,7 +154,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @media (max-width: 768px) {
   .logo {
     display: initial;
-    width: 170%;
+    width: 120px;
     margin: 10px 0;
   }
 

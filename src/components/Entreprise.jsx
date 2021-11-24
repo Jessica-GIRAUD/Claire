@@ -53,7 +53,7 @@ const Entreprise = () => {
               }}
             >
               N'hésitez pas à me contacter directement pour de plus amples
-              informtions.
+              informations.
             </p>
           </p>
         </div>

@@ -83,19 +83,22 @@ const Prestations = () => {
           </Slide>
         </div>
 
-        <div className="prices-container alone">
-          <h4> Séance en entreprise </h4>
-          <p style={{ fontSize: "20px" }}> Sur devis</p>
-        </div>
+        <Slide bottom>
+          <div className="wrapper-type-entreprise">
+            <h3 className="presta-type">Entreprise</h3>{" "}
+          </div>
+          <div className="prices-container alone">
+            <h4> Séance en groupe </h4>
+            <p style={{ fontSize: "20px" }}> Sur devis</p>
+          </div>
+        </Slide>
 
         <div className="paiement">
           <p>
-            {" "}
             <strong>Paiement :</strong> par chèques ou espèces
           </p>
           <p className="p-display">-</p>
           <p>
-            {" "}
             <strong>Remboursement : </strong>
             Prise en charge sous condition (voir mutuelle).
           </p>
