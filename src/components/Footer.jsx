@@ -35,7 +35,15 @@ const Footer = () => {
         </ul>
         <p className="copyright">
           {" "}
-          © 2021 - Jessica GIRAUD with ❤️ - All rights reserved.{" "}
+          © 2021 -{" "}
+          <a
+            href="https://www.linkedin.com/in/jessica-giraud-31031989/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Jessica GIRAUD{" "}
+          </a>
+          with ❤️ - All rights reserved.{" "}
         </p>
       </footer>
     </div>
