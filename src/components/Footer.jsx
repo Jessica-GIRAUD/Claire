@@ -27,7 +27,7 @@ const Footer = () => {
             <a href="/aproposdemoi">A propos de moi</a>
           </li>
           <li className="list-inline-item">
-            <a href="#">CGV</a>
+            <a href="/cgv">CGV</a>
           </li>
           <li className="list-inline-item">
             <a href="/contact">Contact</a>
