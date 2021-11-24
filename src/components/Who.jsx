@@ -47,6 +47,7 @@ const Who = () => {
             <br />
             Chaque objectif est défini en séance et le protocole de soin est
             <strong>
+              {" "}
               établi de façon personnalisée et en fonction de vos besoins
             </strong>
             .

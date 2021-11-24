@@ -36,7 +36,7 @@ const Prestations = () => {
           </Fade>
 
           <div className="presta-adultes">
-            <h3 className="presta-type">
+            <h3 className="presta-type-enfants">
               Enfants{" "}
               <span
                 style={{
@@ -76,7 +76,7 @@ const Prestations = () => {
             {" "}
             <strong>Paiement :</strong> par chèques ou espèces
           </p>
-          <p>-</p>
+          <p className="p-display">-</p>
           <p>
             {" "}
             <strong>Remboursement : </strong>
@@ -85,7 +85,7 @@ const Prestations = () => {
         </div>
         <Slide delay={500} bottom>
           <div>
-            <h3 style={{ marginBottom: "40px" }}>
+            <h3 className="deontologie">
               Je suis soumise au code de déontologie de la sophrologie et au
               secret professionnel.
             </h3>

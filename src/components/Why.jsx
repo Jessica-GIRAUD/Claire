@@ -42,7 +42,7 @@ const Why = () => {
             <strong>lâcher-prise</strong> et la <strong>prise de recul </strong>
             pour m'aider à aller de l'avant plus sereinement.
           </p>
-          <p style={{ fontStyle: "italic", fontSize: "medium" }}>
+          <p style={{ fontStyle: "italic" }}>
             (Dépression, anxiété/angoisses, périnatalié /postpartum, mal-être,
             manque de confiance/motivation,...)
           </p>
@@ -58,7 +58,7 @@ const Why = () => {
             redynamiser. J'améliore la <strong>qualité de mon sommeil</strong>{" "}
             et je retrouve un sommeil serein.
           </p>
-          <p style={{ fontStyle: "italic", fontSize: "medium" }}>
+          <p style={{ fontStyle: "italic" }}>
             (Difficulté d'endormissement, de sommeil non réparateur, de levers
             difficiles...)
           </p>
@@ -74,7 +74,7 @@ const Why = () => {
             retrouve <strong>confiance en moi</strong> et en mes{" "}
             <strong>capacités</strong>.
           </p>
-          <p style={{ fontStyle: "italic", fontSize: "medium" }}>
+          <p style={{ fontStyle: "italic" }}>
             (Préparation à l'accouchement, aux examens, aux entretiens, aux
             épreuves sportives...)
           </p>

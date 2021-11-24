@@ -7,7 +7,6 @@ import { push as Menu } from "react-burger-menu";
 const HeaderNavbar = () => {
   const { pathname } = useLocation();
 
-  const path = pathname === "/prestations" || pathname === "/sophrologie";
   const splitLocation = pathname.split("/");
 
   return (
@@ -16,7 +15,7 @@ const HeaderNavbar = () => {
         <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
       </Link>
       <nav className="navbar">
-        <ul className={path ? "navbar-list cream" : "navbar-list green"}>
+        <ul className="navbar-list cream">
           <li
             className={
               splitLocation[1] === "" || splitLocation[1] === "accueil"
@@ -49,7 +48,7 @@ const HeaderNavbar = () => {
 
       <nav className="mobile-menu">
         <Menu right>
-          <ul className={path ? "navbar-list cream" : "navbar-list green"}>
+          <ul className="navbar-list cream">
             <li
               className={
                 splitLocation[1] === "" || splitLocation[1] === "accueil"
@@ -64,7 +63,7 @@ const HeaderNavbar = () => {
             </li>
             <li className={splitLocation[1] === "sophrologie" ? "active" : ""}>
               <a href="/sophrologie">La Sophrologie</a>
-            </li>{" "}
+            </li>
             <li className={splitLocation[1] === "entreprise" ? "active" : ""}>
               <a href="/entreprise">Entreprise</a>
             </li>

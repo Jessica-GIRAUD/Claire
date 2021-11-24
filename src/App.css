@@ -91,6 +91,69 @@ h1 {
   height: 5%;
 }
 
+.guillemet3 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .creamPage {
+    min-height: 120vh;
+  }
+  .greenPage {
+    min-height: 140vh;
+  }
+  .accueil-img-text-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vh;
+  }
+
+  .ecriture {
+    width: 70%;
+  }
+  .instruction-container {
+    width: 85%;
+  }
+
+  .instruction-container h4 {
+    font-size: medium !important;
+    text-align: justify;
+  }
+
+  .instruction-container p {
+    text-align: justify;
+    font-size: small !important;
+  }
+
+  .guillemet1 {
+    width: 15%;
+  }
+
+  .guillemet2 {
+    display: none;
+  }
+
+  .guillemet3 {
+    display: initial;
+    width: 15%;
+  }
+
+  .citation-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto 0 auto;
+    justify-content: space-around;
+  }
+
+  .citation {
+    font-size: 15px !important;
+  }
+
+  .auteur {
+    font-size: 20px !important;
+  }
+}
 /* ABOUT PAGE */
 
 .container-about {
@@ -140,7 +203,7 @@ h4 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .container-about {
     width: 100%;
@@ -149,8 +212,10 @@ h4 {
     align-items: center;
     justify-content: center;
     padding-top: 25vh;
+  }
 
-    min-height: 100%;
+  .about-txt-pic-container {
+    width: 85%;
   }
 
   .who-txt-pic-container {
@@ -176,7 +241,7 @@ h4 {
 
   p {
     text-align: justify;
-    font-size: medium;
+    font-size: small;
   }
 
   h4 {
@@ -295,6 +360,9 @@ h4 {
     width: 60%;
     display: flex;
     justify-content: center;
+  }
+  .presentation-txt-pic-container {
+    width: 85%;
   }
 
   .who-container {
@@ -482,6 +550,24 @@ h4 {
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .entreprise-img-text-container {
+    flex-direction: column;
+  }
+  .entreprise-txt-container {
+    width: 85%;
+  }
+  .entreprise-txt-container li {
+    font-size: small;
+  }
+  .reunion {
+    width: 70%;
+  }
+  .entreprise-title h1 {
+    margin-bottom: 0% !important;
+  }
+}
+
 /* Seance CSS start */
 
 .number {
@@ -570,11 +656,22 @@ h4 {
 
   .container-seance {
     position: relative;
-    width: 75%;
+    width: 85%;
     justify-content: center;
     padding-bottom: 20px;
   }
 
+  .numbers-container {
+    flex-wrap: wrap;
+  }
+
+  .fauteuil {
+    width: 100%;
+  }
+
+  .numbers-container-txt {
+    text-align: justify;
+  }
   .container-seance li {
     font-size: medium;
   }
@@ -655,6 +752,11 @@ h4 {
   top: 45%;
 }
 
+.presta-type-enfants {
+  position: absolute;
+  top: 45%;
+}
+
 .prices-container {
   width: 100%;
   height: 90px;
@@ -700,6 +802,57 @@ h4 {
 .tiare-img {
   width: 100%;
   filter: drop-shadow(15px 15px 15px #48392e63);
+}
+
+.deontologie {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    height: 900px;
+    flex-direction: column;
+    width: 85%;
+  }
+  .presta-adultes {
+    width: 100%;
+    margin: auto;
+  }
+
+  .presta-type {
+    top: 39%;
+  }
+
+  .presta-type-enfants {
+    top: 114%;
+  }
+
+  .presta-img-container {
+    height: 70%;
+    margin: 50px 0 70px 0;
+  }
+
+  .alone {
+    width: 85%;
+  }
+
+  .p-display {
+    display: none;
+  }
+
+  .paiement {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .paiement p {
+    text-align: center;
+  }
+
+  .deontologie {
+    font-size: medium;
+    text-align: center;
+  }
 }
 
 /* CONTACT PAGE */
@@ -755,6 +908,9 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  .container-contact {
+    flex-direction: column;
+  }
   .container-contact h1 {
     margin-bottom: 33px !important;
   }
@@ -782,7 +938,7 @@ h4 {
   }
 
   .iframe {
-    width: 400px;
+    width: 85%;
     height: 250px;
   }
 
