@@ -797,7 +797,7 @@ h4 {
 .paiement {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 70%;
 }
 .prices-container h4 {
   margin: 0;

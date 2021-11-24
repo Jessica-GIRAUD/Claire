@@ -49,21 +49,21 @@ const Prestations = () => {
             <img src={tiare} alt="tiare" className="tiare-img" />
           </div>
 
+          <div className="wrapper-type-mobile">
+            <h3 className="presta-type-enfants-mobile">
+              Enfants{" "}
+              <span
+                style={{
+                  fontSize: "70%",
+                  fontStyle: "italic",
+                  color: "dimgray",
+                }}
+              >
+                jusqu'à 11 ans
+              </span>
+            </h3>
+          </div>
           <Slide right>
-            <div className="wrapper-type-mobile">
-              <h3 className="presta-type-enfants-mobile">
-                Enfants{" "}
-                <span
-                  style={{
-                    fontSize: "70%",
-                    fontStyle: "italic",
-                    color: "dimgray",
-                  }}
-                >
-                  jusqu'à 11 ans
-                </span>
-              </h3>
-            </div>
             <div className="presta-adultes">
               <div className="prices-container">
                 <h4>Séance individuelle - 1h</h4>
