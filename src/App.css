@@ -553,13 +553,14 @@ h4 {
 /* ENTREPRISE PAGE */
 
 .reunion {
-  width: 32%;
+  width: 35%;
 }
 
 .entreprise-title {
   padding-top: 25vh;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .entreprise-title h1 {
