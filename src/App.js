@@ -12,6 +12,7 @@ import {  useLocation } from "react-router-dom";
 import './App.css';
 import Accueil from './components/Accueil';
 import Entreprise from './components/Entreprise';
+import Footer from './components/Footer';
 
 function App() {
   const location = useLocation();
@@ -43,6 +44,7 @@ const [loading, setLoading] = useState(true);
         <Route exact path="/prestations" component={Prestations}></Route>
         <Route exact path="/contact" component={Contact}></Route>
        </Switch>
+       <Footer/>
     </Router>}
     </>
   );
