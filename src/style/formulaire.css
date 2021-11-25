@@ -88,3 +88,18 @@ input[type="checkbox"]:checked {
 #message:focus {
   border: 1px solid #a9c6ba;
 }
+
+@media (max-width: 768px) {
+  .formulaire {
+    width: 85%;
+  }
+
+  .form-container h1 {
+    font-size: 30px;
+  }
+
+  input[type="checkbox"] {
+    height: 20px;
+    width: 40px;
+  }
+}
