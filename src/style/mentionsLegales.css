@@ -10,4 +10,11 @@
 
 .container-mentions h2 {
   color: #a9c6ba;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container-mentions {
+    width: 80%;
+  }
 }
