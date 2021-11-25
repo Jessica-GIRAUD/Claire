@@ -13,6 +13,7 @@ import './App.css';
 import Accueil from './components/Accueil';
 import Entreprise from './components/Entreprise';
 import Footer from './components/Footer';
+import MentionsLegales from './components/MentionsLegales';
 
 function App() {
   const location = useLocation();
@@ -43,6 +44,8 @@ const [loading, setLoading] = useState(true);
         <Route exact path="/seance" component={Seance}></Route>
         <Route exact path="/prestations" component={Prestations}></Route>
         <Route exact path="/contact" component={Contact}></Route>
+        <Route exact path="/mentionslegales" component={MentionsLegales}></Route>
+      
        </Switch>
        <Footer/>
     </Router>}

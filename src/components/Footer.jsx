@@ -1,21 +1,24 @@
 import React from "react";
 import "../style/footer.css";
+import coeur from "../images/coeur.png";
 
 const Footer = () => {
   return (
     <div className="footer">
       <footer>
         <div className="social">
-          <a href="#">
+          <a
+            href="https://www.instagram.com/claire.deligne_sophro/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="icon ion-social-instagram"></i>
           </a>
-          <a href="#">
-            <i className="icon ion-social-snapchat"></i>
-          </a>
-          <a href="#">
-            <i className="icon ion-social-twitter"></i>
-          </a>
-          <a href="#">
+          <a
+            href="https://m.facebook.com/Claire-Delign%C3%A9-Sophrologue-%C3%A0-Colomiers-104229912097347/?_rdr"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="icon ion-social-facebook"></i>
           </a>
         </div>
@@ -43,7 +46,8 @@ const Footer = () => {
           >
             Jessica GIRAUD{" "}
           </a>
-          with ❤️ - All rights reserved.{" "}
+          with <img src={coeur} alt="coeur" style={{ width: "10px" }} /> - All
+          rights reserved.{" "}
         </p>
       </footer>
     </div>

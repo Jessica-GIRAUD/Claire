@@ -1,0 +1,13 @@
+.container-mentions {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  text-align: justify;
+  padding-top: 25vh;
+  align-items: center;
+}
+
+.container-mentions h2 {
+  color: #a9c6ba;
+}
