@@ -2,6 +2,7 @@ import React from "react";
 import Slide from "react-reveal/Slide";
 import phone from "../images/appel-telephonique.png";
 import email from "../images/enveloppe.png";
+import Formulaire from "./Formulaire";
 
 const Contact = () => {
   return (
@@ -82,6 +83,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Formulaire />
       <div class="custom-shape-divider-bottom-1635688825">
         <svg
           data-name="Layer 1"
