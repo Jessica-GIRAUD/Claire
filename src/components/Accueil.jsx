@@ -1,5 +1,5 @@
 import React from "react";
-import Slide from "react-reveal/Slide";
+import { Fade, Slide } from "react-reveal";
 import ecriture from "../images/ecriture.png";
 import guillemet from "../images/guillemet.png";
 
@@ -7,7 +7,10 @@ const Accueil = () => {
   return (
     <div className="creamPage">
       <div className="accueil-img-text-container">
-        <img src={ecriture} alt="ecriture" className="ecriture" />
+        <Fade delay={1000}>
+          {" "}
+          <img src={ecriture} alt="ecriture" className="ecriture" />{" "}
+        </Fade>
         <div className="instruction-container">
           <h4>
             Stress au quotidien, angoisses, émotions fluctuantes, sommeil
