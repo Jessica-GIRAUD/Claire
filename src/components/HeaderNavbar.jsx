@@ -41,12 +41,12 @@ const HeaderNavbar = () => {
 
   return (
     <header className="navbarCreamStyle">
+      <Link to="/#accueil" style={{ width: "30%" }}>
+        <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
+      </Link>
       <Fade>
-        <Link to="/#accueil" style={{ width: "30%" }}>
-          <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
-        </Link>
         <nav className="navbar">
-          <ul className="navbar-list">
+          <ul className="navbar-list cream">
             <li className={hash === "" || hash === "#accueil" ? "active" : ""}>
               <Link to="/#accueil">Accueil</Link>
             </li>
@@ -79,7 +79,7 @@ const HeaderNavbar = () => {
           onOpen={handleIsOpen}
           onClose={handleIsOpen}
         >
-          <ul className="navbar-list">
+          <ul className="navbar-list cream">
             <li
               className={hash === "" || hash === "#accueil" ? "active" : ""}
               onClick={closeSideBar}

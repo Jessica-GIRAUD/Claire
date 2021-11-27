@@ -4,6 +4,10 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #48392e;
   font-family: "Quicksand", sans-serif;
