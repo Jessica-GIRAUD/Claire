@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/footer.css";
 import coeur from "../images/coeur.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -24,16 +25,16 @@ const Footer = () => {
         </div>
         <ul className="list-inline">
           <li className="list-inline-item">
-            <a href="/accueil">Accueil</a>
+            <Link to="/#accueil">Accueil</Link>
           </li>
           <li className="list-inline-item">
-            <a href="/aproposdemoi">A propos de moi</a>
+            <Link to="/#aproposdemoi">A propos de moi</Link>
           </li>
           <li className="list-inline-item">
-            <a href="/mentionslegales">Mentions légales</a>
+            <Link to="/mentionslegales">Mentions légales</Link>
           </li>
           <li className="list-inline-item">
-            <a href="/contact">Contact</a>
+            <Link to="/#contact">Contact</Link>
           </li>
         </ul>
         <p className="copyright">

@@ -8,11 +8,11 @@ const Presentation = () => {
     <div className="container-sophro">
       <div className="presentation-txt-pic-container">
         <Slide top>
-          <h1>Présentation</h1>
+          <h1>La Sophrologie</h1>
         </Slide>
         <p>
-          La Sophrologie est une thérapie psychocorporelle engageant le corps et
-          l'esprit vers <strong>un objectif de mieux-être</strong>.
+          C'est est une thérapie psychocorporelle engageant le corps et l'esprit
+          vers <strong>un objectif de mieux-être</strong>.
         </p>
         <p>
           Cette technique a été conçue par le neuropsychiatre{" "}

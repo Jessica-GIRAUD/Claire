@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/mentionsLegales.css";
 
 const MentionsLegales = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="creamPage">
       <div className="container-mentions">

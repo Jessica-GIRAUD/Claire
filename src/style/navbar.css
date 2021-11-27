@@ -74,6 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -137,13 +138,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #0c0c0c;
+  color: #48392e;
   line-height: 2.4em;
 }
 
 /* Individual item */
 .bm-item {
   display: inline-block;
+  padding-left: 0;
+  text-align: center;
 }
 
 /* Styling of overlay */
@@ -169,5 +172,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .mobile-menu {
     visibility: visible;
+  }
+
+  .navbar-list li {
+    list-style: none;
   }
 }

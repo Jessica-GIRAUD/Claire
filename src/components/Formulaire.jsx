@@ -16,13 +16,6 @@ const Formulaire = () => {
     message: "",
   });
 
-  console.log(errors);
-
-  /*   const onSubmit = (e) => {
-    const data = JSON.stringify(watch());
-    console.log("data", data);
-  }; */
-
   const sendFeedback = (serviceID, templateId, variables) => {
     window.emailjs
       .send(serviceID, templateId, variables)

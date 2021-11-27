@@ -4,7 +4,7 @@ import reunion from "../images/reunion.png";
 
 const Entreprise = () => {
   return (
-    <div className="coffeePage">
+    <section className="coffeePage" id="entreprises">
       <div className="entreprise-title">
         <Slide top>
           <h1>Entreprises</h1>
@@ -62,7 +62,7 @@ const Entreprise = () => {
           <img src={reunion} alt="reunion" className="reunion" />
         </Slide>
       </div>
-    </div>
+    </section>
   );
 };
 
