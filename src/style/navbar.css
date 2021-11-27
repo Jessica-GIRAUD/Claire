@@ -138,7 +138,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #48392e;
+  color: #0c0c0c;
   line-height: 2.4em;
 }
 
@@ -170,9 +170,5 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .mobile-menu {
     visibility: visible;
-  }
-
-  .navbar-list li {
-    list-style: none;
   }
 }
