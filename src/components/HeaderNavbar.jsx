@@ -38,90 +38,89 @@ const HeaderNavbar = () => {
       });
     });
   });
+
   return (
-    <Fade>
-      <header className="navbarCreamStyle">
-        <Link to="/#accueil" style={{ width: "30%" }}>
-          <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
-        </Link>
-        <nav className="navbar">
+    <header className="navbarCreamStyle">
+      <Link to="/#accueil" style={{ width: "30%" }}>
+        <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
+      </Link>
+      <nav className="navbar">
+        <ul className="navbar-list">
+          <li className={hash === "" || hash === "#accueil" ? "active" : ""}>
+            <Link to="/#accueil">Accueil</Link>
+          </li>
+          <li className={hash === "#aproposdemoi" ? "active" : ""}>
+            <Link to="/#aproposdemoi">A propos de moi</Link>
+          </li>
+          <li className={hash === "#sophrologie" ? "active" : ""}>
+            <Link to="/#sophrologie">La Sophrologie</Link>
+          </li>
+          <li className={hash === "#seance" ? "active" : ""}>
+            <Link to="/#seance">La Séance</Link>
+          </li>
+          <li className={hash === "#entreprises" ? "active" : ""}>
+            <Link to="/#entreprises">Entreprises</Link>
+          </li>
+          <li className={hash === "#prestations" ? "active" : ""}>
+            <Link to="/#prestations">Prestations</Link>
+          </li>
+          <li className={hash === "#contact" ? "active" : ""}>
+            <Link to="/#contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <nav className="mobile-menu">
+        <Menu
+          right
+          isOpen={isOpen}
+          onOpen={handleIsOpen}
+          onClose={handleIsOpen}
+        >
           <ul className="navbar-list">
-            <li className={hash === "" || hash === "#accueil" ? "active" : ""}>
+            <li
+              className={hash === "" || hash === "#accueil" ? "active" : ""}
+              onClick={closeSideBar}
+            >
               <Link to="/#accueil">Accueil</Link>
             </li>
-            <li className={hash === "#aproposdemoi" ? "active" : ""}>
+            <li
+              className={hash === "#aproposdemoi" ? "active" : ""}
+              onClick={closeSideBar}
+            >
               <Link to="/#aproposdemoi">A propos de moi</Link>
             </li>
-            <li className={hash === "#sophrologie" ? "active" : ""}>
+            <li
+              className={hash === "#sophrologie" ? "active" : ""}
+              onClick={closeSideBar}
+            >
               <Link to="/#sophrologie">La Sophrologie</Link>
             </li>
-            <li className={hash === "#seance" ? "active" : ""}>
+            <li onClick={closeSideBar}>
               <Link to="/#seance">La Séance</Link>
             </li>
-            <li className={hash === "#entreprises" ? "active" : ""}>
+            <li
+              className={hash === "#entreprises" ? "active" : ""}
+              onClick={closeSideBar}
+            >
               <Link to="/#entreprises">Entreprises</Link>
             </li>
-            <li className={hash === "#prestations" ? "active" : ""}>
+            <li
+              className={hash === "#prestations" ? "active" : ""}
+              onClick={closeSideBar}
+            >
               <Link to="/#prestations">Prestations</Link>
             </li>
-            <li className={hash === "#contact" ? "active" : ""}>
+            <li
+              className={hash === "#contact" ? "active" : ""}
+              onClick={closeSideBar}
+            >
               <Link to="/#contact">Contact</Link>
             </li>
           </ul>
-        </nav>
-
-        <nav className="mobile-menu">
-          <Menu
-            right
-            isOpen={isOpen}
-            onOpen={handleIsOpen}
-            onClose={handleIsOpen}
-          >
-            <ul className="navbar-list">
-              <li
-                className={hash === "" || hash === "#accueil" ? "active" : ""}
-                onClick={closeSideBar}
-              >
-                <Link to="/#accueil">Accueil</Link>
-              </li>
-              <li
-                className={hash === "#aproposdemoi" ? "active" : ""}
-                onClick={closeSideBar}
-              >
-                <Link to="/#aproposdemoi">A propos de moi</Link>
-              </li>
-              <li
-                className={hash === "#sophrologie" ? "active" : ""}
-                onClick={closeSideBar}
-              >
-                <Link to="/#sophrologie">La Sophrologie</Link>
-              </li>
-              <li onClick={closeSideBar}>
-                <Link to="/#seance">La Séance</Link>
-              </li>
-              <li
-                className={hash === "#entreprises" ? "active" : ""}
-                onClick={closeSideBar}
-              >
-                <Link to="/#entreprises">Entreprises</Link>
-              </li>
-              <li
-                className={hash === "#prestations" ? "active" : ""}
-                onClick={closeSideBar}
-              >
-                <Link to="/#prestations">Prestations</Link>
-              </li>
-              <li
-                className={hash === "#contact" ? "active" : ""}
-                onClick={closeSideBar}
-              >
-                <Link to="/#contact">Contact</Link>
-              </li>
-            </ul>
-          </Menu>
-        </nav>
-      </header>
-    </Fade>
+        </Menu>
+      </nav>
+    </header>
   );
 };
 
