@@ -4,7 +4,6 @@ import "../style/navbar.css";
 import { useLocation, useHistory } from "react-router-dom";
 import { push as Menu } from "react-burger-menu";
 import { HashLink as Link } from "react-router-hash-link";
-import { Fade } from "react-reveal";
 
 const HeaderNavbar = () => {
   const { hash } = useLocation();
