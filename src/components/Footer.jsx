@@ -41,7 +41,7 @@ const Footer = () => {
           {" "}
           © 2021 -{" "}
           <a
-            href="https://www.linkedin.com/in/jessica-giraud-31031989/"
+            href="https://www.linkedin.com/in/jessica-giraud/"
             target="_blank"
             rel="noreferrer"
           >
