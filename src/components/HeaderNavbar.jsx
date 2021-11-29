@@ -10,12 +10,15 @@ const HeaderNavbar = () => {
   const { hash } = useLocation();
   const history = useHistory();
 
+  // state for navbar
   const [isOpen, setOpen] = useState(false);
 
+  // handle open for menu burger
   const handleIsOpen = () => {
     setOpen(!isOpen);
   };
 
+  // handle close for menu burger
   const closeSideBar = () => {
     setOpen(false);
   };
@@ -39,6 +42,20 @@ const HeaderNavbar = () => {
     });
   });
 
+  const navbarItems = [
+    { title: "Accueil", path: "/#accueil", hashed: "#accueil" },
+    {
+      title: "A propos de moi",
+      path: "/#aproposdemoi",
+      hashed: "#aproposdemoi",
+    },
+    { title: "La Sophrologie", path: "/#sophrologie", hashed: "#sophrologie" },
+    { title: "La séance", path: "/#seance", hashed: "#seance" },
+    { title: "Entreprises", path: "/#entreprises", hashed: "#entreprises" },
+    { title: "Prestations", path: "/#prestations", hashed: "#prestations" },
+    { title: "Contact", path: "/#contact", hashed: "#contact" },
+  ];
+
   return (
     <header className="navbarCreamStyle">
       <Link to="/#accueil" style={{ width: "30%" }}>
@@ -47,27 +64,13 @@ const HeaderNavbar = () => {
       <Fade>
         <nav className="navbar">
           <ul className="navbar-list cream">
-            <li className={hash === "" || hash === "#accueil" ? "active" : ""}>
-              <Link to="/#accueil">Accueil</Link>
-            </li>
-            <li className={hash === "#aproposdemoi" ? "active" : ""}>
-              <Link to="/#aproposdemoi">A propos de moi</Link>
-            </li>
-            <li className={hash === "#sophrologie" ? "active" : ""}>
-              <Link to="/#sophrologie">La Sophrologie</Link>
-            </li>
-            <li className={hash === "#seance" ? "active" : ""}>
-              <Link to="/#seance">La Séance</Link>
-            </li>
-            <li className={hash === "#entreprises" ? "active" : ""}>
-              <Link to="/#entreprises">Entreprises</Link>
-            </li>
-            <li className={hash === "#prestations" ? "active" : ""}>
-              <Link to="/#prestations">Prestations</Link>
-            </li>
-            <li className={hash === "#contact" ? "active" : ""}>
-              <Link to="/#contact">Contact</Link>
-            </li>
+            {navbarItems.map(({ title, path, hashed = "" }, index) => {
+              return (
+                <li key={index} className={hash === hashed ? "active" : ""}>
+                  <Link to={path}>{title}</Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </Fade>
@@ -80,45 +83,17 @@ const HeaderNavbar = () => {
           onClose={handleIsOpen}
         >
           <ul className="navbar-list cream">
-            <li
-              className={hash === "" || hash === "#accueil" ? "active" : ""}
-              onClick={closeSideBar}
-            >
-              <Link to="/#accueil">Accueil</Link>
-            </li>
-            <li
-              className={hash === "#aproposdemoi" ? "active" : ""}
-              onClick={closeSideBar}
-            >
-              <Link to="/#aproposdemoi">A propos de moi</Link>
-            </li>
-            <li
-              className={hash === "#sophrologie" ? "active" : ""}
-              onClick={closeSideBar}
-            >
-              <Link to="/#sophrologie">La Sophrologie</Link>
-            </li>
-            <li onClick={closeSideBar}>
-              <Link to="/#seance">La Séance</Link>
-            </li>
-            <li
-              className={hash === "#entreprises" ? "active" : ""}
-              onClick={closeSideBar}
-            >
-              <Link to="/#entreprises">Entreprises</Link>
-            </li>
-            <li
-              className={hash === "#prestations" ? "active" : ""}
-              onClick={closeSideBar}
-            >
-              <Link to="/#prestations">Prestations</Link>
-            </li>
-            <li
-              className={hash === "#contact" ? "active" : ""}
-              onClick={closeSideBar}
-            >
-              <Link to="/#contact">Contact</Link>
-            </li>
+            {navbarItems.map(({ title, path, hashed = "" }, index) => {
+              return (
+                <li
+                  key={index}
+                  className={hash === hashed ? "active" : ""}
+                  onClick={closeSideBar}
+                >
+                  <Link to={path}>{title}</Link>
+                </li>
+              );
+            })}
           </ul>
         </Menu>
       </nav>

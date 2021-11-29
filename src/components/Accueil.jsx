@@ -36,18 +36,18 @@ const Accueil = () => {
               c'est l'orientation <br /> que vous donnez à votre voile. <br />{" "}
               Le vent est pareil pour tous !{" "}
               <img src={guillemet} alt="guillemet" className="guillemet4" />
-              <h1 className="auteur">Jim Rohn</h1>{" "}
             </h1>
+            <h1 className="auteur-mobile">Jim Rohn</h1>{" "}
             <h1 className="citation">
               <img src={guillemet} alt="guillemet" className="guillemet3" /> Ce
               n'est pas le vent qui décide de notre destination, <br /> c'est
               l'orientation que vous donnez à votre voile. <br /> Le vent est
               pareil pour tous !{" "}
               <img src={guillemet} alt="guillemet" className="guillemet4" />
-              <h1 className="auteur">Jim Rohn</h1>{" "}
             </h1>
             <img src={guillemet} alt="guillemet" className="guillemet2" />
           </div>
+          <h1 className="auteur">Jim Rohn</h1>{" "}
         </Slide>
       </Fade>
     </section>

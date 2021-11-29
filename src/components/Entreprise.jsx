@@ -45,16 +45,16 @@ const Entreprise = () => {
             <strong> climat propice à la réussite</strong> de votre entreprise.
             <br />
             <br />
-            <p
-              style={{
-                fontWeight: "bold",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              N'hésitez pas à me contacter directement pour de plus amples
-              informations.
-            </p>
+          </p>
+          <p
+            style={{
+              fontWeight: "bold",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            N'hésitez pas à me contacter directement pour de plus amples
+            informations.
           </p>
         </div>
         <Slide right>

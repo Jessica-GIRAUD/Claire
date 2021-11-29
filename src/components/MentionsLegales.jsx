@@ -10,17 +10,8 @@ const MentionsLegales = () => {
     <div className="creamPage">
       <div className="container-mentions">
         <h1>Mentions légales</h1>
-        <h2>1. Mentions obligatoires : Sophrologie</h2>
-        <p>
-          « Conformément aux articles L.616-1 et R.616-1 du code de la
-          consommation, nous proposons un dispositif de médiation de la
-          consommation. L’entité de médiation retenue est : CNPM – MEDIATION DE
-          LA CONSOMMATION. En cas de litige, vous pouvez déposer votre
-          réclamation sur son site : https://cnpm-mediation-consommation.eu ou
-          par voie postale en écrivant à CNPM – MEDIATION – CONSOMMATION – 23,
-          rue Terrenoire – 42100 SAINT ETIENNE »
-        </p>
-        <h2>2. Présentation du site.</h2>
+
+        <h2>1. Présentation du site.</h2>
         <p>
           En vertu de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la
           confiance dans l’économie numérique, il est précisé aux utilisateurs
@@ -31,16 +22,37 @@ const MentionsLegales = () => {
           <p>
             <span>Propriétaire :</span> Claire Deligné - Centre Médical des
             Marots, 12 Avenue du Louron 31770 COLOMIERS <br />
+            <br />
+            <span>
+              Activité gérée sous-couveuse via Auxime Immatriculation au RCS :{" "}
+              404 328 510 R.C.S. Lyon
+            </span>{" "}
+            <br />
+            <br />
             <span>Créateur : </span> Claire Deligné <br />
+            <br />
             <span> Responsable publication :</span> Claire Deligné –
-            deligne.c@gmail.com <br />
+            deligne.c@gmail.com <br /> <br />
             Le responsable publication est une personne physique ou une personne
-            morale. <br />
-            <span>Webmaster :</span> Claire Deligné & Jessica Giraud <br />
+            morale. <br /> <br />
+            <span>Developpement du site réalisé par :</span> Jessica Giraud -
+            <a
+              href="mailto: jessica.giraud1@gmail.com"
+              style={{ color: "#48392e" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              jessica.giraud1@gmail.com
+            </a>
+            <br /> <br />
             <span> Hébergeur :</span> OVH – 2 rue Kellermann 59100 Roubaix
           </p>
         </div>
-        <h2>2. Présentation du site.</h2>
+        <h2>
+          2. Conditions générales d’utilisation du site et des services
+          proposés.
+        </h2>
         <p>
           L’utilisation du site www.claire-deligne.fr implique l’acceptation
           pleine et entière des conditions générales d’utilisation ci-après
@@ -62,7 +74,7 @@ const MentionsLegales = () => {
           invité à s’y référer le plus souvent possible afin d’en prendre
           connaissance.
         </p>
-        <h2>4. Description des services fournis.</h2>
+        <h2>3. Description des services fournis.</h2>
         <p>
           Le site www.claire-deligne.fr a pour objet de fournir une information
           concernant l’ensemble des activités de la société. Claire Deligné
@@ -80,7 +92,7 @@ const MentionsLegales = () => {
           réserve de modifications ayant été apportées depuis leur mise en
           ligne.
         </p>
-        <h2>5. Limitations contractuelles sur les données techniques.</h2>
+        <h2>4. Limitations contractuelles sur les données techniques.</h2>
         <p>
           Le site utilise la technologie JavaScript. Le site Internet ne pourra
           être tenu responsable de dommages matériels liés à l’utilisation du
@@ -88,15 +100,16 @@ const MentionsLegales = () => {
           utilisant un matériel récent, ne contenant pas de virus et avec un
           navigateur de dernière génération mis-à-jour
         </p>
-        <h2>6. Propriété intellectuelle et contrefaçons.</h2>
+        <h2>5. Propriété intellectuelle et contrefaçons.</h2>
         <p>
           Claire Deligné est propriétaire des droits de propriété intellectuelle
           ou détient les droits d’usage sur tous les éléments accessibles sur le
-          site, notamment les textes, images, graphismes, logo, icônes, sons,
-          logiciels. Toute reproduction, représentation, modification,
-          publication, adaptation de tout ou partie des éléments du site, quel
-          que soit le moyen ou le procédé utilisé, est interdite, sauf
-          autorisation écrite préalable de : Claire Deligné.
+          site, notamment les textes, images, graphismes, logo, icônes, extraits
+          du site de Canva.com soumis à un abonnement profesionnel. Toute
+          reproduction, représentation, modification, publication, adaptation de
+          tout ou partie des éléments du site, quel que soit le moyen ou le
+          procédé utilisé, est interdite, sauf autorisation écrite préalable de
+          : Claire Deligné.
         </p>
         <p>
           Toute exploitation non autorisée du site ou de l’un quelconque des
@@ -104,7 +117,7 @@ const MentionsLegales = () => {
           contrefaçon et poursuivie conformément aux dispositions des articles
           L.335-2 et suivants du Code de Propriété Intellectuelle.
         </p>
-        <h2>7. Limitations de responsabilité.</h2>
+        <h2>6. Limitations de responsabilité.</h2>
         <p>
           Claire Deligné ne pourra être tenue responsable des dommages directs
           et indirects causés au matériel de l’utilisateur, lors de l’accès au
@@ -132,7 +145,7 @@ const MentionsLegales = () => {
           injurieux, diffamant, ou pornographique, quel que soit le support
           utilisé (texte, photographie…).
         </p>
-        <h2>8. Gestion des données personnelles.</h2>
+        <h2>7. Gestion des données personnelles.</h2>
         <p>
           En France, les données personnelles sont notamment protégées par la
           loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004,
@@ -184,7 +197,7 @@ const MentionsLegales = () => {
           directive 96/9 du 11 mars 1996 relative à la protection juridique des
           bases de données.
         </p>
-        <h2>9. Liens hypertextes et cookies.</h2>
+        <h2>8. Liens hypertextes et cookies.</h2>
         <p>
           Le site www.claire-deligne.fr contient un certain nombre de liens
           hypertextes vers d’autres sites, mis en place avec l’autorisation de
@@ -236,21 +249,21 @@ const MentionsLegales = () => {
           Dans la section “Confidentialité”, cliquez sur préférences. Dans
           l’onglet “Confidentialité”, vous pouvez bloquer les cookies.
         </p>
-        <h2>10. Droit applicable et attribution de juridiction.</h2>
+        <h2>9. Droit applicable et attribution de juridiction.</h2>
         <p>
           Tout litige en relation avec l’utilisation du site
           www.claire-deligne.fr est soumis au droit français. Il est fait
           attribution exclusive de juridiction aux tribunaux compétents de
           Paris.
         </p>
-        <h2>11. Les principales lois concernées.</h2>
+        <h2>10. Les principales lois concernées.</h2>
         <p>
           Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n°
           2004-801 du 6 août 2004 relative à l’informatique, aux fichiers et aux
           libertés. Loi n° 2004-575 du 21 juin 2004 pour la confiance dans
           l’économie numérique.
         </p>
-        <h2>12. Lexique.</h2>
+        <h2>11. Lexique.</h2>
         <p>
           Utilisateur : Internaute se connectant, utilisant le site susnommé.
           Informations personnelles : « les informations qui permettent, sous
