@@ -99,8 +99,8 @@ const Contact = () => {
                   alignItems: "center  ",
                 }}
               />
-              <a href="tel:+3360000000">
-                <p>06 XX XX XX XX</p>
+              <a href="tel:+33778056925 ">
+                <p>07 78 05 69 25</p>
               </a>
             </div>
           </div>
