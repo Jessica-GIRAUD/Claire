@@ -77,8 +77,8 @@ const Contact = () => {
                   alignItems: "center  ",
                 }}
               />
-              <a href="mailto: deligne.c@gmail.com">
-                <p>deligne.c@gmail.com</p>
+              <a href="mailto: contact@claire-deligne.fr">
+                <p>contact@claire-deligne.fr</p>
               </a>
             </div>
 

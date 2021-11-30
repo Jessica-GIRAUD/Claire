@@ -32,7 +32,7 @@ const MentionsLegales = () => {
             <span>Créateur : </span> Claire Deligné <br />
             <br />
             <span> Responsable publication :</span> Claire Deligné –
-            deligne.c@gmail.com <br /> <br />
+            contact@claire-deligne.fr <br /> <br />
             Le responsable publication est une personne physique ou une personne
             morale. <br /> <br />
             <span>Developpement du site réalisé par :</span> Jessica Giraud -
