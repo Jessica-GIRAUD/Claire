@@ -96,17 +96,17 @@ const Prestations = () => {
             <div className="presta-adultes">
               <div className="prices-container">
                 <h4>Séance individuelle - 1h</h4>
-                <p> 55€</p>
+                <p> 45€</p>
               </div>
 
               <div className="prices-container">
                 <h4>Protocole personnalisé de 8 séances</h4>
-                <p> 380€</p>
+                <p> 310€</p>
               </div>
 
               <div className="prices-container">
                 <h4> Séance supplémentaire protocole - 1h</h4>
-                <p> 45€</p>
+                <p> 35€</p>
               </div>
             </div>
           </Slide>

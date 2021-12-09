@@ -10,7 +10,7 @@ const Accueil = () => {
         <div className="accueil-img-text-container">
           <img src={ecriture} alt="ecriture" className="ecriture" />{" "}
           <div className="instruction-container">
-            <h1 id="title">Sophrologue à Colomiers</h1>
+            <h1 id="title">Sophrologue certifiée à Colomiers</h1>
             <h4>
               Stress au quotidien, angoisses, émotions fluctuantes, sommeil
               irrégulier, manque de confiance ou de motivation ?

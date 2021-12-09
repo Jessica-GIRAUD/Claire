@@ -19,7 +19,7 @@ h1 {
   font-weight: 100;
   font-style: italic;
   color: #48392e;
-  font-size: 70px;
+  font-size: 65px;
 }
 
 /* CSS for all pages*/
@@ -44,6 +44,9 @@ h1 {
 
 /* ACCUEIL PAGE */
 
+#title {
+  font-size: 60px;
+}
 .accueil-img-text-container {
   height: 765px;
   padding-top: 25vh;
@@ -127,6 +130,10 @@ h1 {
   }
   .greenPage {
     min-height: 140vh;
+  }
+
+  #title {
+    font-size: 35px;
   }
   .accueil-img-text-container {
     flex-direction: column;

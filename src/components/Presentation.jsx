@@ -11,7 +11,7 @@ const Presentation = () => {
           <h1>La Sophrologie</h1>
         </Slide>
         <p>
-          C'est est une thérapie psychocorporelle engageant le corps et l'esprit
+          C'est une thérapie psychocorporelle engageant le corps et l'esprit
           vers <strong>un objectif de mieux-être</strong>.
         </p>
         <p>
