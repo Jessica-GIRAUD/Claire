@@ -76,7 +76,7 @@ const Seance = () => {
             </p>
             <p style={{ fontWeight: "bold", textAlign: "center" }}>
               Pour un accompagnement personnalisé et complet, je vous propose de
-              réaliser d'un protocole adapté à votre objectif (entre 8 à 12
+              mettre en place un protocole adapté à votre objectif (entre 8 à 12
               séances).
             </p>
           </div>
