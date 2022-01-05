@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import logo from "../images/Logo.png";
+import Doctolib from "../images/Doctolib.png";
+import D from "../images/D.png";
 import "../style/navbar.css";
 import { useLocation, useHistory } from "react-router-dom";
 import { push as Menu } from "react-burger-menu";
 import { HashLink as Link } from "react-router-hash-link";
-import { Fade } from "react-reveal";
 
 const HeaderNavbar = () => {
   const { hash } = useLocation();
@@ -61,19 +62,57 @@ const HeaderNavbar = () => {
       <Link to="/#accueil" style={{ width: "30%" }}>
         <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
       </Link>
-      <Fade>
-        <nav className="navbar">
-          <ul className="navbar-list cream">
-            {navbarItems.map(({ title, path, hashed = "" }, index) => {
-              return (
-                <li key={index} className={hash === hashed ? "active" : ""}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      </Fade>
+
+      <nav className="navbar">
+        <ul className="navbar-list cream">
+          {navbarItems.map(({ title, path, hashed = "" }, index) => {
+            return (
+              <li key={index} className={hash === hashed ? "active" : ""}>
+                <Link to={path}>{title}</Link>
+              </li>
+            );
+          })}
+          <a
+            href="https://www.doctolib.fr/sophrologue/colomiers/claire-deligne?pid=practice-231155&amp;practitioner_id=45588443&amp;speciality_id=133&amp;utm_campaign=website-button&amp;utm_source=claire-deligne-website-button&amp;utm_medium=referral&amp;utm_content=option-5&amp;utm_term=claire-deligne"
+            style={{
+              display: "block",
+              textAlign: "center",
+              backgroundColor: "#0596DE",
+              color: "#ffffff",
+              fontSize: "14px",
+              overflow: "hidden",
+              width: "300px",
+              height: "40px",
+              borderBottomRightRadius: "none",
+              borderBottomLeftRadius: "none",
+              position: "fixed",
+              bottom: "0",
+              right: "5px",
+              zIndex: "1000",
+              borderTopLeftRadius: "4px",
+              borderTopRightRadius: "4px",
+              lineHeight: "40px",
+            }}
+            target="_blank"
+            rel="noreferrer"
+            data-reactroot=""
+          >
+            <span style={{ fontSize: "15px" }}>
+              Prendre rendez-vous en ligne
+            </span>
+            <img
+              style={{
+                height: "20px",
+                marginBottom: "3px",
+                verticalAlign: "middle",
+                width: "auto",
+              }}
+              src="https://pro.doctolib.fr/external_button/doctolib-white-transparent.png"
+              alt="Doctolib"
+            />
+          </a>
+        </ul>
+      </nav>
 
       <nav className="mobile-menu">
         <Menu
@@ -95,7 +134,39 @@ const HeaderNavbar = () => {
               );
             })}
           </ul>
+          <a
+            href="https://www.doctolib.fr/sophrologue/colomiers/claire-deligne?pid=practice-231155&amp;practitioner_id=45588443&amp;speciality_id=133&amp;utm_campaign=website-button&amp;utm_source=claire-deligne-website-button&amp;utm_medium=referral&amp;utm_content=option-5&amp;utm_term=claire-deligne"
+            style={{
+              backgroundColor: "rgb(5, 150, 222)",
+              color: "rgb(255, 255, 255)",
+              borderRadius: "4px",
+              outline: "0",
+              textDecoration: "none",
+            }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span style={{ fontSize: "18px" }}>
+              Prendre rendez-vous en ligne
+            </span>
+            <img
+              style={{
+                height: "35px",
+                width: "auto",
+              }}
+              src="https://pro.doctolib.fr/external_button/doctolib-white-transparent.png"
+              alt="Doctolib"
+            />
+          </a>
         </Menu>
+        <a
+          href="https://www.doctolib.fr/sophrologue/colomiers/claire-deligne?pid=practice-231155&amp;practitioner_id=45588443&amp;speciality_id=133&amp;utm_campaign=website-button&amp;utm_source=claire-deligne-website-button&amp;utm_medium=referral&amp;utm_content=option-5&amp;utm_term=claire-deligne"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {/*  <img src={Doctolib} alt="Doctolib" className="doctolib" /> */}
+          <img src={D} alt="Doctolib" className="doctolib" />
+        </a>
       </nav>
     </header>
   );

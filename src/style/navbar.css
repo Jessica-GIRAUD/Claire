@@ -82,6 +82,10 @@
   visibility: hidden;
 }
 
+.doctolib {
+  display: none;
+}
+
 /* MENU BURGER */
 
 /* Position and sizing of burger button */
@@ -176,5 +180,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .navbar-list li {
     list-style: none;
+  }
+
+  .doctolib {
+    display: initial;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 27px;
+    right: 100px;
   }
 }
