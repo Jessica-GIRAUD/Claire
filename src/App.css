@@ -49,7 +49,7 @@ h1 {
 }
 .accueil-img-text-container {
   height: 765px;
-  padding-top: 25vh;
+  padding-top: 10vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
