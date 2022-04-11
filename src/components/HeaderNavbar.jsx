@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import logo from "../images/Logo.png";
-import Doctolib from "../images/Doctolib.png";
 import D from "../images/D.png";
 import "../style/navbar.css";
 import { useLocation, useHistory } from "react-router-dom";

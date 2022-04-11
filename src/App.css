@@ -607,10 +607,12 @@ h4 {
 .logo-anime {
   height: 100%;
   margin: auto;
+  z-index: 5;
 }
 
 .my-animation {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: #fff5f0;
   animation: fadeOut ease 4.5s;
