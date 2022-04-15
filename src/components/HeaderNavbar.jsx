@@ -5,6 +5,7 @@ import "../style/navbar.css";
 import { useLocation, useHistory } from "react-router-dom";
 import { push as Menu } from "react-burger-menu";
 import { HashLink as Link } from "react-router-hash-link";
+import { Zoom } from "react-reveal";
 
 const HeaderNavbar = () => {
   const { hash } = useLocation();
@@ -59,7 +60,9 @@ const HeaderNavbar = () => {
   return (
     <header className="navbarCreamStyle">
       <Link to="/#accueil" style={{ width: "30%" }}>
-        <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
+        <Zoom>
+          <img src={logo} alt="Claire Deligné" id="logo" className="logo" />
+        </Zoom>
       </Link>
 
       <nav className="navbar">
