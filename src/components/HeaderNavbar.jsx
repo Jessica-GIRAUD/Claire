@@ -52,7 +52,6 @@ const HeaderNavbar = () => {
     },
     { title: "La Sophrologie", path: "/#sophrologie", hashed: "#sophrologie" },
     { title: "La séance", path: "/#seance", hashed: "#seance" },
-    { title: "Entreprises", path: "/#entreprises", hashed: "#entreprises" },
     { title: "Prestations", path: "/#prestations", hashed: "#prestations" },
     { title: "Contact", path: "/#contact", hashed: "#contact" },
   ];
@@ -69,11 +68,21 @@ const HeaderNavbar = () => {
         <ul className="navbar-list cream">
           {navbarItems.map(({ title, path, hashed = "" }, index) => {
             return (
-              <li key={index} className={hash === hashed ? "active" : ""}>
-                <Link to={path}>{title}</Link>
-              </li>
+              <Zoom>
+                <li key={index} className={hash === hashed ? "active" : ""}>
+                  <Link
+                    to={path}
+                    scroll={(el) =>
+                      el.scrollIntoView({ behavior: "smooth", block: "start" })
+                    }
+                  >
+                    {title}
+                  </Link>
+                </li>
+              </Zoom>
             );
           })}
+
           <a
             href="https://www.doctolib.fr/sophrologue/colomiers/claire-deligne?pid=practice-231155&amp;practitioner_id=45588443&amp;speciality_id=133&amp;utm_campaign=website-button&amp;utm_source=claire-deligne-website-button&amp;utm_medium=referral&amp;utm_content=option-5&amp;utm_term=claire-deligne"
             style={{

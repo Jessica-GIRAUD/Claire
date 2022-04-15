@@ -1,9 +1,7 @@
 import React from "react";
-
 import Presentation from "./Presentation";
 import ScrollArrow from "./ScrollArrow";
-import Who from "./Who";
-import Why from "./Why";
+import Accompagnement from "./Accompagnement";
 
 const Sophrologie = () => {
   return (
@@ -32,8 +30,7 @@ const Sophrologie = () => {
         </svg>
       </div>
       <Presentation />
-      <Who />
-      <Why />
+      <Accompagnement />
       <ScrollArrow />
     </section>
   );

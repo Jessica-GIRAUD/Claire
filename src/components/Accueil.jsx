@@ -6,28 +6,37 @@ import guillemet from "../images/guillemet.png";
 const Accueil = () => {
   return (
     <section className="creamPage" id="accueil">
-      <Fade>
+      <Fade delay={600}>
         <div className="accueil-img-text-container">
           <img src={ecriture} alt="ecriture" className="ecriture" />{" "}
           <div className="instruction-container">
-            <h1 id="title">Sophrologue certifiée à Colomiers</h1>
-            <h4>
-              Stress au quotidien, angoisses, émotions fluctuantes, sommeil
-              irrégulier, manque de confiance ou de motivation ?
-            </h4>
+            <h1 id="title">
+              Je vous accompagne dans votre histoire de femme à travers les
+              différentes étapes de votre vie.{" "}
+            </h1>
+
             <p>
-              Je vous propose de vous accompagner vers votre{" "}
-              <strong>mieux-être</strong> au travers d'un{" "}
-              <strong>bilan complet et personnalisé</strong> pour vous permettre
-              de
-              <strong>
-                {" "}
-                retrouver votre équilibre et votre bien-être en toute autonomie.
-              </strong>
+              En identifiant ensemble le chemin à entreprendre, je vous aide à
+              travers les techniques de relaxation de Sophrologie,{" "}
+              <strong>à devenir la personne que vous souhaitez être</strong> !
+              J’exerce au sein du{" "}
+              <strong> centre médical des Marots à Colomiers</strong>, près de
+              Toulouse, et uniquement sur rendez-vous.
             </p>
+
+            <p>
+              Je serai là pour{" "}
+              <strong>
+                vous écouter et vous aider à retrouver un équilibre physique et
+                émotionnel
+              </strong>
+              , afin de vous permettre de vivre comme vous le désirez.
+            </p>
+
+            <h2>Vivez le changement dès maintenant !</h2>
           </div>
         </div>
-        <Slide left delay={400}>
+        <Slide left delay={800}>
           <div className="citation-container">
             <img src={guillemet} alt="guillemet" className="guillemet1" />
             <h1 className="citation-mobile">

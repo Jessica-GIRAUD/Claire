@@ -4,7 +4,7 @@ import fauteuil from "../images/fauteuil.png";
 
 const Seance = () => {
   return (
-    <section className="creamPage" id="seance">
+    <section className="greenPage" id="seance">
       <div className="custom-shape-divider-top-1638014272">
         <svg
           data-name="Layer 1"
@@ -28,57 +28,69 @@ const Seance = () => {
           ></path>
         </svg>
       </div>
-      <div className="seance-title">
-        <Slide top>
-          <h1>La séance</h1>
-        </Slide>
-      </div>
 
       <div className="container-seance">
-        <p>
-          La séance de sophrologie se déroule au cabinet et dure en moyenne 1h
-          (1h15 à 1h30 pour la première séance afin de recueillir vos attentes
-          et besoins).
-        </p>
-        <div className="numbers-container">
-          <Slide left>
-            <img src={fauteuil} alt="fauteuil" className="fauteuil" />
+        <div>
+          <Slide top>
+            <h1>La séance</h1>
           </Slide>
-          <div>
-            <div className="numbers-container">
-              <div className="number">
-                <h1>1</h1>
-                <p>Un temps d'accueil sur votre état du moment</p>
-              </div>
-              <div className="number">
-                <h1>2</h1>
-                <p>
-                  {" "}
-                  La pratique d'exercices respiratoire et d'une visualisation
-                  personnalisés
-                </p>
-              </div>
-              <div className="number">
-                <h1>3</h1>
-                <p>Un retour au calme avec un échange sur les ressentis</p>
-              </div>{" "}
+          <div className="seance-img-txt">
+            <Slide left>
+              <img src={fauteuil} alt="fauteuil" className="fauteuil" />
+            </Slide>
+            <div>
+              <p>
+                La séance se pratique debout et/ou assis, les yeux fermés la
+                plupart du temps et ne nécessite aucune tenue particulière mais
+                doit être plutôt confortable.
+              </p>
+              <p style={{ textDecoration: "underline" }}>
+                Elle se déroule en trois étapes :
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    Je vous écoute et m’informe de votre météo intérieure, de
+                    votre état du moment.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Je vous présente les outils ou exercices que vous avez
+                    besoin de pratiquer le jour de la séance. Nous les réalisons
+                    ensemble et un enregistrement audio vous sera transmis en
+                    fin de séance ce qui vous aidera dans votre pratique
+                    quotidienne.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Je vous accompagne dans l’accueil de vos ressentis suite à
+                    la pratique que vous venez de faire.
+                  </p>
+                </li>
+              </ol>
+              <p>
+                Lors de la pratique, les{" "}
+                <strong>exercices de respiration</strong> et la{" "}
+                <strong>visualisation mentale positive</strong> vont vous aider
+                à accéder à la <strong>détente</strong> et la{" "}
+                <strong>sérénité</strong> en prenant{" "}
+                <strong>conscience de votre corps</strong>
+                dans sa globalité.
+              </p>
+              <p>
+                Au fur et à mesure de votre pratique en cabinet et chez vous,
+                l’ensemble des exercices deviendront instinctif et un changement
+                s’opérera.
+              </p>
+              <p>
+                Tout changement demande bien évidemment de l’implication, de la
+                motivation et de l’engagement mais aussi de la patience, alors
+                ensemble nous franchirons les étapes pour vous permettre
+                d’accéder à vos attentes progressivement mais sûrement !
+              </p>
             </div>
-            <p className="numbers-container-txt">
-              Elle se pratique à la fois debout lors des exercices respiratoires
-              et assis lors de la partie de la visualisation. <br /> Les yeux
-              sont généralement fermés. <br /> Aucune tenue vestimentaire n'est
-              demandé mais il faut que vous soyez à l'aise. <br />
-              <br /> Les exercices de respiration vont vous permettent d'accéder
-              à la détente et au lâcher prise et la visualisation va vous aider
-              à retrouver le calme, la force ou encore la sérénité en fonction
-              de vos besoins. <br />
-              <br />{" "}
-            </p>
-            <p style={{ fontWeight: "bold", textAlign: "center" }}>
-              Pour un accompagnement personnalisé et complet, je vous propose de
-              mettre en place un protocole adapté à votre objectif (entre 8 à 12
-              séances).
-            </p>
           </div>
         </div>
       </div>

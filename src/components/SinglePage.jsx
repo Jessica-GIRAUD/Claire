@@ -3,7 +3,6 @@ import Accueil from "./Accueil";
 import About from "./About";
 import Sophrologie from "./Sophrologie";
 import Seance from "./Seance";
-import Entreprise from "./Entreprise";
 import Prestations from "./Prestations";
 import Contact from "./Contact";
 
@@ -14,7 +13,6 @@ const SinglePage = () => {
       <About />
       <Sophrologie />
       <Seance />
-      <Entreprise />
       <Prestations />
       <Contact />
     </>

@@ -7,7 +7,7 @@ import Formulaire from "./Formulaire";
 const Contact = () => {
   return (
     <section className="creamPage" id="contact">
-      <div className="custom-shape-divider-top-1638014109">
+      <div className="custom-shape-divider-top-1638014108">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const Contact = () => {
           </a>
 
           <p style={{ fontStyle: "italic", fontSize: "medium" }}>
-            Places de parking disponibles
+            Places de parking disponibles <br /> Accès PMR - Ascenseur
           </p>
 
           <div className="contact-container">
@@ -77,8 +77,8 @@ const Contact = () => {
                   alignItems: "center  ",
                 }}
               />
-              <a href="mailto: contact@www.claire-deligne.fr">
-                <p>contact@www.claire-deligne.fr</p>
+              <a href="mailto: contact@claire-deligne.fr">
+                <p>contact@claire-deligne.fr</p>
               </a>
             </div>
 

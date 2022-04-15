@@ -42,9 +42,10 @@ const About = () => {
           </Fade>
           <Fade bottom delay={900}>
             <p>
-              Passionnée depuis plus de 20 ans par le développement personnel et
-              le bien-être afin d’améliorer ma qualité de vie, j’ai décidé de
-              faire de ma passion mon métier.
+              Passionnée depuis plus de 20 ans par le{" "}
+              <strong>développement personnel</strong> et le{" "}
+              <strong>bien-être</strong> afin d’améliorer ma qualité de vie,
+              j’ai décidé de faire de ma passion mon métier.
               <br />
               <br />
               En effet, après avoir travaillé 10 ans dans les soins de bien-être
@@ -55,11 +56,12 @@ const About = () => {
               l'issue d'un mémoire.
               <br />
               <br />
-              Je souhaite aujourd’hui, au travers de la sophrologie, vous
-              apporter les techniques nécessaires afin de vous permettre de vous
-              libérer de vos poids émotionnels, et de vous aider à trouver les
-              clés pour reprendre le contrôle de votre vie, pleinement et
-              sereinement.
+              Je souhaite aujourd’hui, au travers de la{" "}
+              <strong>sophrologie</strong>, vous apporter les techniques
+              nécessaires afin de vous permettre de vous{" "}
+              <strong>libérer de vos poids émotionnels</strong>, et de vous
+              aider à trouver les clés pour reprendre le contrôle de votre vie,
+              pleinement et sereinement.
             </p>
           </Fade>
           <div className="container-chambre">

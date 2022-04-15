@@ -19,7 +19,7 @@ h1 {
   font-weight: 100;
   font-style: italic;
   color: #48392e;
-  font-size: 65px;
+  font-size: 60px;
 }
 
 /* CSS for all pages*/
@@ -45,11 +45,13 @@ h1 {
 /* ACCUEIL PAGE */
 
 #title {
-  font-size: 60px;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 2px 1px #48392e8f;
 }
 .accueil-img-text-container {
-  height: 765px;
-  padding-top: 10vh;
+  padding-top: 25vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -63,7 +65,7 @@ h1 {
 
 .instruction-container p {
   text-align: center;
-  font-size: x-large !important;
+  font-size: large !important;
 }
 
 .ecriture {
@@ -133,12 +135,17 @@ h1 {
   }
 
   #title {
-    font-size: 35px;
+    font-size: 25px;
+    text-shadow: 1px 1px #48392e8f;
   }
   .accueil-img-text-container {
     flex-direction: column;
     align-items: center;
     padding-top: 18vh;
+  }
+
+  .instruction-container > h2 {
+    text-align: center;
   }
 
   .ecriture {
@@ -229,9 +236,12 @@ h1 {
   width: 50%;
 }
 
+.about-txt-pic-container h1 {
+  margin-bottom: 10px;
+}
 p {
   text-align: justify;
-  font-size: large;
+  font-size: medium;
 }
 
 h4 {
@@ -245,6 +255,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 .claire-container {
@@ -376,6 +387,10 @@ h4 {
 .presentation img {
   width: 70%;
 }
+
+.presentation-txt-pic-container h1 {
+  margin-bottom: 10px !important;
+}
 .container-sophro-who {
   position: relative;
   background-color: #fff5f0;
@@ -391,18 +406,14 @@ h4 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .who-text-container {
-  width: 85%;
+  width: 75%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.who-text-container p {
-  text-align: center;
+  align-items: flex-start;
 }
 
 .who-pic-container {
@@ -494,6 +505,35 @@ h4 {
 /** For mobile devices **/
 @media (max-width: 767px) {
   .custom-shape-divider-top-1638014109 svg {
+    width: calc(149% + 1.3px);
+    height: 40px;
+  }
+}
+
+.custom-shape-divider-top-1638014108 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1638014108 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 94px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1638014108 .shape-fill {
+  fill: #e8ceb0;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1638014108 svg {
     width: calc(149% + 1.3px);
     height: 40px;
   }
@@ -604,83 +644,6 @@ h4 {
   padding-top: 10%;
 }
 
-.logo-anime {
-  height: 100%;
-  margin: auto;
-  z-index: 5;
-}
-
-.my-animation {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #fff5f0;
-  animation: fadeOut ease 4.5s;
-  -webkit-animation: fadeOut ease 4.5s;
-  -moz-animation: fadeOut ease 4.5s;
-  -o-animation: fadeOut ease 4.5s;
-  -ms-animation: fadeOut ease 4.5s;
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-ms-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 /* ENTREPRISE PAGE */
 
 .reunion {
@@ -739,43 +702,12 @@ h4 {
 
 /* Seance CSS start */
 
-.number {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-}
-
-.number h1 {
-  display: flex;
-  font-family: "MyFont", sans-serif;
-  margin-bottom: 0px !important;
-  text-shadow: 3px 3px 7px #48392e;
-  height: 140px;
-  justify-content: center;
-  align-items: center;
-}
-.number p {
-  text-align: center;
-  margin: 0;
-}
-
-.numbers-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 5%;
-}
-
-.numbers-container-txt {
-  text-align: center;
-}
-
 .fauteuil {
   width: 35%;
   margin: 2% 0;
 }
 .container-seance {
+  padding-top: 20vh;
   text-align: center;
   width: 85%;
   display: flex;
@@ -785,14 +717,12 @@ h4 {
   align-items: center;
 }
 
-.container-seance li {
-  font-size: large;
+.container-seance h1 {
+  margin-bottom: 10px;
 }
 
-.seance-title {
-  padding-top: 21vh;
-  display: flex;
-  justify-content: center;
+.container-seance li {
+  font-size: large;
 }
 
 .meditation-img {
@@ -838,7 +768,7 @@ h4 {
 }
 
 .custom-shape-divider-top-1638014272 .shape-fill {
-  fill: #e8ceb0;
+  fill: #fff5f0;
 }
 
 /** For mobile devices **/
@@ -878,12 +808,11 @@ h4 {
   fill: #e8ceb0;
 }
 
-@media (max-width: 768px) {
-  .logo-anime {
-    width: 100%;
-    margin: auto;
-  }
+.seance-img-txt {
+  display: flex;
+}
 
+@media (max-width: 768px) {
   .seance-title {
     padding-top: 20vh;
   }
@@ -903,9 +832,11 @@ h4 {
     width: 100%;
   }
 
-  .numbers-container-txt {
-    text-align: justify;
+  .seance-img-txt {
+    display: flex;
+    flex-direction: column;
   }
+
   .container-seance li {
     font-size: medium;
   }
@@ -928,7 +859,7 @@ h4 {
 /* PRESTA PAGE */
 
 .container-presta {
-  padding-top: 25vh;
+  padding-top: 20vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -940,45 +871,9 @@ h4 {
   margin-bottom: 0 !important;
 }
 
-.wrapper {
-  display: flex;
-  width: 90%;
-  align-items: flex-start;
-  height: 350px;
-}
-
-.wrapper-type {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-}
-
-.wrapper-type-entreprise {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-}
-
-.wrapper-type-mobile {
-  display: none;
-}
-
-.presta-type-enfants-mobile {
-  display: none;
-}
-
 .presta-adultes {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.presta-adultes2 {
-  width: 30%;
-  height: 100%;
+  width: 35%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -997,18 +892,6 @@ h4 {
   filter: drop-shadow(15px 15px 15px #48392e63);
 }
 
-.alone {
-  width: 30%;
-  height: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #fff5f0;
-  justify-content: space-evenly;
-  margin-bottom: 40px;
-}
-
 .paiement {
   display: flex;
   justify-content: space-evenly;
@@ -1025,13 +908,16 @@ h4 {
 }
 
 .presta-img-container {
+  width: 70%;
   display: flex;
-  height: 100%;
-  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.tiare-img {
-  width: 75%;
+.cabinet-img {
+  width: 500px;
+  height: 230px;
   filter: drop-shadow(15px 15px 15px #48392e63);
   margin: 0 auto;
 }
@@ -1041,65 +927,22 @@ h4 {
 }
 
 @media (max-width: 768px) {
-  .wrapper {
-    height: 900px;
-    flex-direction: column;
-    width: 85%;
-  }
   .presta-adultes {
     width: 100%;
     margin: auto;
   }
 
-  .presta-adultes2 {
-    width: 100%;
-    margin: auto;
+  .presta-img-container {
+    flex-direction: column;
   }
 
-  .tiare-img {
-    margin: 0;
-    width: 100%;
-  }
-
-  .wrapper-type {
-    justify-content: center;
-  }
-
-  .wrapper-type .presta-img-container {
-    display: none;
-  }
-
-  .wrapper-type .presta-adultes2 {
-    display: none;
-  }
-
-  .wrapper-type-entreprise {
-    margin-top: 30px;
-  }
-  .wrapper-type-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .cabinet-img {
+    margin-bottom: 20px;
     width: 100%;
   }
-  .presta-type-enfants-mobile {
-    display: initial;
-  }
-  .presta-type-enfants {
-    display: none;
-  }
-
   .presta-img-container {
     height: 70%;
     margin: 30px 0 15px 0;
-  }
-
-  .alone {
-    width: 85%;
-  }
-
-  .p-display {
-    display: none;
   }
 
   .paiement {
@@ -1117,7 +960,7 @@ h4 {
   }
 
   .presta-img-container {
-    width: 100%;
+    width: 80%;
   }
 }
 

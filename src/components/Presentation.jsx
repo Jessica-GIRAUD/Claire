@@ -11,22 +11,31 @@ const Presentation = () => {
           <h1>La Sophrologie</h1>
         </Slide>
         <p>
-          C'est une thérapie psychocorporelle engageant le corps et l'esprit
-          vers <strong>un objectif de mieux-être</strong>.
+          La <strong>sophrologie</strong> a été développée par le
+          neuropsychiatre Alfonso Caycedo dans les années 1960.
         </p>
         <p>
-          Cette technique a été conçue par le neuropsychiatre{" "}
-          <strong>Alfonso Caycedo</strong> et s'inspire à la fois de techniques
-          occidentales et orientales. Elle allie des techniques respiratoires
-          pour décontracter tout le corps, à{" "}
-          <strong>des visualisations ou des imageries mentales</strong> qui
-          équilibrent la conscience vers <strong>un état plus positif</strong>.
+          C’est une méthode vous permettant de{" "}
+          <strong>reprendre conscience avec votre corps</strong> pour vous
+          reconnecter à lui en <strong>lâchant prise sur le mental</strong>. Cet
+          entraînement corporel contribue à retrouver la sérénité au travers de
+          techniques de relaxation (respiration et visualisation positive) qui
+          sont <strong>adaptables et accessibles à tous</strong>.
         </p>
         <p>
-          Ainsi, elle a pour but,{" "}
-          <strong>de développer et d'activer tout votre potentiel</strong>, afin
-          de mieux vous connaître et d'aborder la vie du bon côté et tout cela
-          de <strong>façon autonome</strong>!
+          Elle a pour but de vous aider à porter un nouveau regard sur vous,{" "}
+          <strong>une meilleure connaissance de vous</strong> et à devenir la
+          personne que vous souhaitez être.
+        </p>
+        <p>
+          Elle favorise ainsi,{" "}
+          <strong>
+            le retour de l’équilibre entre votre corps, votre mental et vos
+            émotions dans votre quotidien.
+          </strong>{" "}
+        </p>
+        <p>
+          Vous retrouvez ainsi <strong>votre potentiel de bien-être.</strong>
         </p>
       </div>
 
