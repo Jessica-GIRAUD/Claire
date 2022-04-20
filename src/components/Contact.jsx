@@ -1,12 +1,12 @@
 import React from "react";
-import Slide from "react-reveal/Slide";
+import { Slide, Bounce } from "react-reveal";
 import phone from "../images/appel-telephonique.png";
 import email from "../images/enveloppe.png";
 import Formulaire from "./Formulaire";
 
 const Contact = () => {
-  return (
-    <section className="creamPage" id="contact">
+  const Divider = () => {
+    return (
       <div className="custom-shape-divider-top-1638014108">
         <svg
           data-name="Layer 1"
@@ -30,21 +30,27 @@ const Contact = () => {
           ></path>
         </svg>
       </div>
+    );
+  };
+  return (
+    <section className="creamPage" id="contact">
+      <Divider />
       <div className="container-contact">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.6032462632431!2d1.31925703769869!3d43.60224199637706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb1b035c07729%3A0x37f63e8c76c8a85d!2s12%20Av.%20du%20Louron%2C%2031770%20Colomiers!5e0!3m2!1sfr!2sfr!4v1635007898055!5m2!1sfr!2sfr"
-          style={{
-            allowfullscreen: "",
-            loading: "lazy",
-          }}
-          className="iframe"
-          title="marot"
-        />
+        <Bounce>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.6032462632431!2d1.31925703769869!3d43.60224199637706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb1b035c07729%3A0x37f63e8c76c8a85d!2s12%20Av.%20du%20Louron%2C%2031770%20Colomiers!5e0!3m2!1sfr!2sfr!4v1635007898055!5m2!1sfr!2sfr"
+            style={{
+              allowfullscreen: "",
+              loading: "lazy",
+            }}
+            className="iframe"
+            title="marot"
+          />
+        </Bounce>
 
         <div className="container-adresse">
           <Slide top>
-            {" "}
-            <h1>Contact</h1>{" "}
+            <h1>Contact</h1>
           </Slide>
           <h4>Horaires d'ouverture</h4>
           <p>
@@ -63,6 +69,17 @@ const Contact = () => {
 
           <p style={{ fontStyle: "italic", fontSize: "medium" }}>
             Places de parking disponibles <br /> Accès PMR - Ascenseur
+          </p>
+
+          <p style={{ fontStyle: "italic", fontSize: "medium" }}>
+            Prise de rendez-vous sur{" "}
+            <a
+              href="https://www.doctolib.fr/sophrologue/colomiers/claire-deligne?pid=practice-231155&amp;practitioner_id=45588443&amp;speciality_id=133&amp;utm_campaign=website-button&amp;utm_source=claire-deligne-website-button&amp;utm_medium=referral&amp;utm_content=option-5&amp;utm_term=claire-deligne"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Doctolib.fr
+            </a>
           </p>
 
           <div className="contact-container">

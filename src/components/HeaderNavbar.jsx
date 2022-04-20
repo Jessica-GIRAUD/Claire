@@ -5,7 +5,7 @@ import "../style/navbar.css";
 import { useLocation, useHistory } from "react-router-dom";
 import { push as Menu } from "react-burger-menu";
 import { HashLink as Link } from "react-router-hash-link";
-import { Zoom } from "react-reveal";
+import { Zoom, Fade } from "react-reveal";
 
 const HeaderNavbar = () => {
   const { hash } = useLocation();
@@ -51,6 +51,11 @@ const HeaderNavbar = () => {
       hashed: "#aproposdemoi",
     },
     { title: "La Sophrologie", path: "/#sophrologie", hashed: "#sophrologie" },
+    {
+      title: "Accompagnement",
+      path: "/#accompagnement",
+      hashed: "#accompagnement",
+    },
     { title: "La séance", path: "/#seance", hashed: "#seance" },
     { title: "Prestations", path: "/#prestations", hashed: "#prestations" },
     { title: "Contact", path: "/#contact", hashed: "#contact" },
@@ -68,7 +73,7 @@ const HeaderNavbar = () => {
         <ul className="navbar-list cream">
           {navbarItems.map(({ title, path, hashed = "" }, index) => {
             return (
-              <Zoom>
+              <Fade>
                 <li key={index} className={hash === hashed ? "active" : ""}>
                   <Link
                     to={path}
@@ -79,7 +84,7 @@ const HeaderNavbar = () => {
                     {title}
                   </Link>
                 </li>
-              </Zoom>
+              </Fade>
             );
           })}
 

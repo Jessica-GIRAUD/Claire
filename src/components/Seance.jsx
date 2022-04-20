@@ -1,5 +1,5 @@
 import React from "react";
-import Slide from "react-reveal";
+import { Slide, Flip } from "react-reveal";
 import fauteuil from "../images/fauteuil.png";
 
 const Seance = () => {
@@ -35,9 +35,9 @@ const Seance = () => {
             <h1>La séance</h1>
           </Slide>
           <div className="seance-img-txt">
-            <Slide left>
+            <Flip>
               <img src={fauteuil} alt="fauteuil" className="fauteuil" />
-            </Slide>
+            </Flip>
             <div>
               <p>
                 La séance se pratique debout et/ou assis, les yeux fermés la

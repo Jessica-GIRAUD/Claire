@@ -36,29 +36,31 @@ const Accueil = () => {
             <h2>Vivez le changement dès maintenant !</h2>
           </div>
         </div>
-        <Slide left delay={800}>
-          <div className="citation-container">
-            <img src={guillemet} alt="guillemet" className="guillemet1" />
-            <h1 className="citation-mobile">
-              <img src={guillemet} alt="guillemet" className="guillemet3" /> Ce
-              n'est pas le vent <br /> qui décide de notre destination, <br />{" "}
-              c'est l'orientation <br /> que vous donnez à votre voile. <br />{" "}
-              Le vent est pareil pour tous !{" "}
-              <img src={guillemet} alt="guillemet" className="guillemet4" />
-            </h1>
-            <h1 className="auteur-mobile">Jim Rohn</h1>{" "}
-            <h1 className="citation">
-              <img src={guillemet} alt="guillemet" className="guillemet3" /> Ce
-              n'est pas le vent qui décide de notre destination, <br /> c'est
-              l'orientation que vous donnez à votre voile. <br /> Le vent est
-              pareil pour tous !{" "}
-              <img src={guillemet} alt="guillemet" className="guillemet4" />
-            </h1>
-            <img src={guillemet} alt="guillemet" className="guillemet2" />
-          </div>
-          <h1 className="auteur">Jim Rohn</h1>{" "}
-        </Slide>
       </Fade>
+
+      <div className="citation-container">
+        <img src={guillemet} alt="guillemet" className="guillemet1" />
+        <h1 className="citation-mobile">
+          <img src={guillemet} alt="guillemet" className="guillemet3" /> Ce
+          n'est pas le vent <br /> qui décide de notre destination, <br /> c'est
+          l'orientation <br /> que vous donnez à votre voile. <br /> Le vent est
+          pareil pour tous !{" "}
+          <img src={guillemet} alt="guillemet" className="guillemet4" />
+        </h1>
+        <h1 className="auteur-mobile">Jim Rohn</h1>{" "}
+        <h1 className="citation">
+          <img src={guillemet} alt="guillemet" className="guillemet3" /> Ce
+          n'est pas le vent qui décide de notre destination, <br /> c'est
+          l'orientation que vous donnez à votre voile. <br /> Le vent est pareil
+          pour tous !{" "}
+          <img src={guillemet} alt="guillemet" className="guillemet4" />
+        </h1>
+        <img src={guillemet} alt="guillemet" className="guillemet2" />
+      </div>
+
+      <Slide left delay={800}>
+        <h1 className="auteur">Jim Rohn</h1>{" "}
+      </Slide>
     </section>
   );
 };

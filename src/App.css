@@ -47,8 +47,7 @@ h1 {
 #title {
   font-size: 40px;
   text-align: center;
-  font-family: "Quicksand", sans-serif;
-  text-shadow: 2px 1px #48392e8f;
+
 }
 .accueil-img-text-container {
   padding-top: 25vh;
@@ -369,6 +368,8 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    margin-bottom: 0px;
   }
 
   .container-chambre {
@@ -393,13 +394,16 @@ h4 {
 }
 .container-sophro-who {
   position: relative;
+  padding-top: 15vh;
   background-color: #fff5f0;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
 }
+
+
 
 .who-container {
   display: flex;
@@ -410,7 +414,7 @@ h4 {
 }
 
 .who-text-container {
-  width: 75%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -428,7 +432,11 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+}
+
+.group {
+  display: flex;
+
 }
 
 .presentation-txt-pic-container {
@@ -439,45 +447,18 @@ h4 {
 }
 
 .who-txt-pic-container img {
-  margin-top: 3%;
   width: 200px;
   filter: drop-shadow(15px 15px 15px #48392e63);
+  margin: 20px;
 }
 
-.adults {
+.pregnant {
   height: 200px;
   width: auto !important;
 }
 
-.why-container {
-  display: flex;
-  width: 93%;
-  justify-content: space-between;
-}
-.why-txt-pic-container {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.why-txt-pic-container img {
-  width: 70%;
-  padding-bottom: 30px;
-  filter: drop-shadow(15px 15px 15px #48392e63);
-}
-
-.why-txt-pic-container p {
-  text-align: center;
-}
-
 .who-text-container p {
   text-align: justify;
-}
-
-.why-title {
-  display: flex;
-  justify-content: center;
 }
 
 /* SOPHRO DIVIDER TOP */
@@ -548,6 +529,10 @@ h4 {
     flex-direction: column;
   }
 
+  .container-sophro-who {
+    flex-direction: column;
+  }
+
   .presentation {
     margin: 45px 0;
     width: 60%;
@@ -555,7 +540,7 @@ h4 {
     justify-content: center;
   }
   .presentation-txt-pic-container {
-    width: 85%;
+    width: 80%;
   }
 
   .who-container {
@@ -566,27 +551,16 @@ h4 {
     width: 85%;
   }
 
-  .why-title {
-    margin-top: 10%;
-  }
-
-  .why-container {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-  .why-txt-pic-container {
-    width: 85%;
-    margin-bottom: 20px;
-  }
-
-  .why-txt-pic-container img {
-    width: 200px;
-  }
-
   .presentation img {
     width: 90%;
+  }
+
+  .who-txt-pic-container img {
+    width: 150px;
+  }
+
+  .pregnant {
+    height: 150px;
   }
 }
 
@@ -644,61 +618,6 @@ h4 {
   padding-top: 10%;
 }
 
-/* ENTREPRISE PAGE */
-
-.reunion {
-  width: 35%;
-}
-
-.entreprise-title {
-  padding-top: 25vh;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.entreprise-title h1 {
-  margin-bottom: -6% !important;
-}
-
-.entreprise-img-text-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.entreprise-txt-container li {
-  font-size: large;
-  margin-bottom: 5px;
-}
-
-.entreprise-txt-container {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 768px) {
-  .entreprise-img-text-container {
-    flex-direction: column;
-  }
-
-  .entreprise-title {
-    padding-top: 20vh;
-  }
-  .entreprise-txt-container {
-    width: 85%;
-  }
-  .entreprise-txt-container li {
-    font-size: small;
-  }
-  .reunion {
-    width: 70%;
-  }
-  .entreprise-title h1 {
-    margin-bottom: 0% !important;
-  }
-}
 
 /* Seance CSS start */
 
@@ -867,9 +786,7 @@ h4 {
   justify-content: center;
 }
 
-.container-presta h1 {
-  margin-bottom: 0 !important;
-}
+
 
 .presta-adultes {
   width: 35%;
@@ -926,6 +843,26 @@ h4 {
   margin-bottom: 40px;
 }
 
+.custom-shape-divider-top-1650470324 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1650470324 svg {
+  position: relative;
+  display: block;
+  width: calc(152% + 1.3px);
+  height: 76px;
+}
+
+.custom-shape-divider-top-1650470324 .shape-fill {
+  fill: #A9C6BA;
+}
+
 @media (max-width: 768px) {
   .presta-adultes {
     width: 100%;
@@ -939,6 +876,7 @@ h4 {
   .cabinet-img {
     margin-bottom: 20px;
     width: 100%;
+    height: 180px;
   }
   .presta-img-container {
     height: 70%;
@@ -1002,7 +940,7 @@ h4 {
 
 .container-contact a {
   text-decoration: none;
-  color: #c2ab90;
+  color: #7c5f3e;
   font-weight: bold;
 }
 

@@ -1,11 +1,9 @@
 import React from "react";
 import Presentation from "./Presentation";
-import ScrollArrow from "./ScrollArrow";
-import Accompagnement from "./Accompagnement";
 
 const Sophrologie = () => {
-  return (
-    <section className="coffeePage" id="sophrologie">
+  const Divider = () => {
+    return (
       <div className="custom-shape-divider-top-1638014109">
         <svg
           data-name="Layer 1"
@@ -29,9 +27,13 @@ const Sophrologie = () => {
           ></path>
         </svg>
       </div>
+    );
+  };
+
+  return (
+    <section className="coffeePage" id="sophrologie">
+      <Divider />
       <Presentation />
-      <Accompagnement />
-      <ScrollArrow />
     </section>
   );
 };

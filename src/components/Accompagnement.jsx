@@ -4,11 +4,11 @@ import pregnant from "../images/pregnant.png";
 import teens from "../images/teens.png";
 import kids from "../images/kids.png";
 import adults from "../images/adult.png";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-reveal";
 
 const Accompagnement = () => {
-  return (
-    <div className="container-sophro-who">
+  const Divider = () => {
+    return (
       <div className="custom-shape-divider-top-1634994765">
         <svg
           data-name="Layer 1"
@@ -32,6 +32,11 @@ const Accompagnement = () => {
           ></path>
         </svg>
       </div>
+    );
+  };
+  return (
+    <section className="creamPage container-sophro-who" id="accompagnement">
+      <Divider />
       <div className="who-container">
         <h1>Accompagnement</h1>
         <div className="who-text-container">
@@ -141,23 +146,28 @@ const Accompagnement = () => {
           </p>
         </div>
       </div>
-      <div className="who-pic-container ">
-        <Fade left>
+      <div className="who-pic-container">
+        <div className="group">
+          <Fade top left>
+            <div className="who-txt-pic-container">
+              <img src={kids} alt="kids enfant" />
+              <p>Enfants</p>
+            </div>
+          </Fade>
+          <Fade top right delay={400}>
+            <div className="who-txt-pic-container">
+              <img src={teens} alt="teens adolescent" />
+              <p>Adolescents</p>
+            </div>
+          </Fade>
+        </div>
+        <Fade delay={1000}>
           <div className="who-txt-pic-container">
-            <img src={kids} alt="kids enfant" />
-            <p>Enfants</p>
-          </div>
-        </Fade>
-        <Fade top delay={400}>
-          {" "}
-          <div className="who-txt-pic-container">
-            <img src={teens} alt="teens adolescent" />
-            <p>Adolescents</p>
-          </div>
-        </Fade>
-        <Fade right delay={600}>
-          <div className="who-txt-pic-container">
-            <img src={pregnant} alt="pregnant femme enceinte" />
+            <img
+              src={pregnant}
+              alt="pregnant femme enceinte"
+              className="pregnant"
+            />
             <p style={{ textAlign: "center" }}>
               Femme enceinte
               <br />
@@ -165,20 +175,23 @@ const Accompagnement = () => {
             </p>
           </div>
         </Fade>
-        <Fade bottom left delay={800}>
-          <div className="who-txt-pic-container">
-            <img src={adults} alt="adults adultes" className="adults" />
-            <p>Adultes</p>
-          </div>
-        </Fade>
-        <Fade bottom right delay={800}>
-          <div className="who-txt-pic-container">
-            <img src={seniors} alt="seniors personnes agées" />
-            <p>Séniors</p>
-          </div>
-        </Fade>
+
+        <div className="group">
+          <Fade bottom left delay={1400}>
+            <div className="who-txt-pic-container">
+              <img src={adults} alt="adults adultes" className="adults" />
+              <p>Adultes</p>
+            </div>
+          </Fade>
+          <Fade bottom right delay={1600}>
+            <div className="who-txt-pic-container">
+              <img src={seniors} alt="seniors personnes agées" />
+              <p>Séniors</p>
+            </div>
+          </Fade>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import Claire from "../images/Claire.png";
 import ChambreSyndicale from "../images/chambreSyndicale.png";
 import Fade from "react-reveal/Fade";
 
-const About = () => {
+const AProposDeMoi = () => {
   return (
     <section className="greenPage" id="aproposdemoi">
       <div className="custom-shape-divider-top-1638013598">
@@ -56,12 +56,11 @@ const About = () => {
               l'issue d'un mémoire.
               <br />
               <br />
-              Je souhaite aujourd’hui, au travers de la{" "}
-              <strong>sophrologie</strong>, vous apporter les techniques
-              nécessaires afin de vous permettre de vous{" "}
-              <strong>libérer de vos poids émotionnels</strong>, et de vous
-              aider à trouver les clés pour reprendre le contrôle de votre vie,
-              pleinement et sereinement.
+              Je souhaite aujourd’hui, au travers de la sophrologie, et de mon
+              expérience en tant que femme et maman, vous apporter les
+              techniques nécessaires afin de vous permettre de vous libérer de
+              vos poids émotionnels, et de vous aider à trouver les clés pour
+              reprendre le contrôle de votre vie, pleinement et sereinement.
             </p>
           </Fade>
           <div className="container-chambre">
@@ -87,4 +86,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AProposDeMoi;
