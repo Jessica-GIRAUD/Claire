@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+### Installation des environnements
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Télécharger VS Code sur https://code.visualstudio.com/
+Telecharger NodeJS sur https://nodejs.org/fr/ (choisir le version "Recommandé pour la plupart des utilisateurs")
+Télécharger FileZilla sur https://filezilla-project.org/download.php?type=server
 
-## Available Scripts
+### Cloner le repository Git
 
-In the project directory, you can run:
+Ouvrir le terminal et se positionner sur l'emplacement choisi pour copier (cloner) le repo
+Effectuer la commande `git clone https://github.com/Jessica-GIRAUD/Claire.git`
+Ouvrir le dossier avec VS Code
 
-### `yarn start`
+### Installation des dépendances
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ouvrir le terminal VS Code et effectuer la commande `npm install`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Lancer le projet en local
 
-### `yarn test`
+Dans le terminal, `npm start`
+Une fenêtre de ton navigateur s'ouvre sur http://localhost:3000 et ton site apparaît.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Modification
 
-### `yarn build`
+Appliquer les modifications au site.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pour un nouveau paragraphe, utilise les balises <p> Ton nouveau paragraphe. </p>
+pour un nouveau titre, utilise les balises <h1> Ton titre </h1> (idem pour un titre à moindre importance => <h2> Ton titre 2 </h2>)
+Pour une mise en gras d'un mot clé, utilise la balise <strong>.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Exemple :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p> Je code mon site en <strong> autonomie. </strong> </p>
 
-### `yarn eject`
+Pour enregistrer les modifications sur le repo github, effectuer dans la console :
+`git add .`
+`git commit -m "écrire ici le titre que tu souhaites donner à tes modifications"`
+`git push origin main-page`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Déploiment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Une fois toutes les modifications effectuées, dans la console, lancer la commande :
+`npm run build`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Dans ton dossier (qui contient ton site), un nouveau dossier appelé Build a été créé.
+Ouvrir FileZilla.
+Se connecter au serveur OVH.
+Trouver le dossier Build dans la partie de gauche et le glisser dans le dossier www de la partie de droite.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Une fois le transfert terminé, le site est en ligne.
