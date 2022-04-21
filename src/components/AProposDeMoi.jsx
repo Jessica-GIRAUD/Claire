@@ -4,8 +4,8 @@ import ChambreSyndicale from "../images/chambreSyndicale.png";
 import Fade from "react-reveal/Fade";
 
 const AProposDeMoi = () => {
-  return (
-    <section className="greenPage" id="aproposdemoi">
+  const Divider = () => {
+    return (
       <div className="custom-shape-divider-top-1638013598">
         <svg
           data-name="Layer 1"
@@ -29,6 +29,11 @@ const AProposDeMoi = () => {
           ></path>
         </svg>
       </div>
+    );
+  };
+  return (
+    <section className="greenPage" id="aproposdemoi">
+      <Divider />
       <div className="container-about">
         <Fade left delay={300}>
           <div className="claire-container">
@@ -76,7 +81,9 @@ const AProposDeMoi = () => {
                   alt="chambre syndicale sophrologie"
                   style={{ marginBottom: "20px", width: "50%" }}
                 />
-                <p>Cliquez ici pour en savoir plus.</p>
+                <p style={{ fontSize: "small" }}>
+                  Cliquez ici pour en savoir plus.
+                </p>
               </a>
             </div>
           </div>

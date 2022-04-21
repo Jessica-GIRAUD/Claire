@@ -254,7 +254,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .claire-container {
@@ -840,6 +840,7 @@ h4 {
 }
 
 .deontologie {
+  font-size: large;
   margin-bottom: 40px;
 }
 

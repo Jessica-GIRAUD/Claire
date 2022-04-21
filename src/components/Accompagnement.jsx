@@ -169,7 +169,7 @@ const Accompagnement = () => {
               className="pregnant"
             />
             <p style={{ textAlign: "center" }}>
-              Femme enceinte
+              Femmes enceintes
               <br />
               Péri et Post-Natalité
             </p>
