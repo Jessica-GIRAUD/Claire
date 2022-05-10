@@ -18,7 +18,7 @@ const Accueil = () => {
             <p>
               En identifiant ensemble le chemin à entreprendre, je vous aide à
               travers les techniques de relaxation de Sophrologie,{" "}
-              <strong>à devenir la personne que vous souhaitez être</strong> !
+              <strong>à devenir la femme que vous souhaitez être</strong> !
               J’exerce au sein du{" "}
               <strong> centre médical des Marots à Colomiers</strong>, près de
               Toulouse, et uniquement sur rendez-vous.

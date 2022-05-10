@@ -65,7 +65,7 @@ const Sophrologie = () => {
             </strong>{" "}
           </p>
           <p>
-            Vous retrouvez ainsi <strong>votre potentiel de bien-être.</strong>
+            Vous retrouvez ainsi <strong>vos capacités, votre sérénité et votre bien-être.</strong>
           </p>
         </div>
 
