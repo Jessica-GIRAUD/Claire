@@ -76,12 +76,12 @@ const Seance = () => {
                 <strong>visualisation mentale positive</strong> vont vous aider
                 à accéder à la <strong>détente</strong> et la{" "}
                 <strong>sérénité</strong> en prenant{" "}
-                <strong>conscience de votre corps</strong>
-                dans sa globalité.
+                <strong>conscience de votre corps</strong> 
+               dans sa globalité.
               </p>
               <p>
                 Au fur et à mesure de votre pratique en cabinet et chez vous,
-                l’ensemble des exercices deviendront instinctif et un changement
+                l’ensemble des exercices deviendront instinctifs et un changement
                 s’opérera.
               </p>
               <p>

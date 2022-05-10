@@ -34,7 +34,7 @@ Exemple :
 Pour enregistrer les modifications sur le repo github, effectuer dans la console :
 `git add .`
 `git commit -m "écrire ici le titre que tu souhaites donner à tes modifications"`
-`git push origin main-page`
+`git push origin single-page`
 
 ### Déploiment
 
